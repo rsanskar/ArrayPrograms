@@ -1,6 +1,7 @@
 ﻿using System;
 using LargestElementInArray;
 using SecondLargestElementInArray;
+using ArraySortingChecker;
 
 namespace AllArrayPrograms
 {
@@ -9,8 +10,10 @@ namespace AllArrayPrograms
         private static readonly Dictionary<int, Action> ProgramActions = new Dictionary<int, Action>
         {
             { 0, RunLargestElementProgram },
-            { 1, RunSecondLargestElementProgram }
+            { 1, RunSecondLargestElementProgram },
+            { 2, RunArraySortChecker}
         };
+
         public static void Main(string[] args)
         {
             while (true)
@@ -18,6 +21,7 @@ namespace AllArrayPrograms
                 Console.WriteLine("Select a program to run:\n");
                 Console.WriteLine("0: Largest Element in an array");
                 Console.WriteLine("1: Second Largest Element in an array");
+                Console.WriteLine("2: Check if an Array is Sorted");
                 Console.WriteLine("-1: Exit");
 
                 if (!int.TryParse(Console.ReadLine(), out int choice))
@@ -43,10 +47,10 @@ namespace AllArrayPrograms
             }
 
         }
-        
+
         private static int[] InputArray()
         {
-            Console.WriteLine("Enter number of elements:");
+            Console.Write("Enter number of elements:");
 
             int n;
             while (!int.TryParse(Console.ReadLine(), out n) || n <= 0)
@@ -80,6 +84,15 @@ namespace AllArrayPrograms
             int[] array = InputArray();
             int secondLargestElement = SecondLargestElement.FindSecondLargestElement(array);
             Console.WriteLine($"Second largest element in the array: {secondLargestElement}");
+        }
+
+        private static void RunArraySortChecker()
+        {
+            Console.WriteLine("\nCheck If an Array is Sorted Program:");
+            int[] array = InputArray();
+
+            bool isSorted = SortChecker.IsSorted(array);
+            Console.WriteLine($"Is the array sorted? {isSorted}");
         }
     }
 }

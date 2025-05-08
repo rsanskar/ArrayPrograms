@@ -1,16 +1,20 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net8.0</TargetFramework>
-    <RootNamespace>All_Problems</RootNamespace>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net8.0</TargetFramework>
+		<RootNamespace>All_Problems</RootNamespace>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\LargestElementInArray\LargestElementInArray.csproj" />
-    <ProjectReference Include="..\SecondLargestElementInArray\SecondLargestElementInArray.csproj" />
-  </ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\LargestElementInArray\LargestElementInArray.csproj" />
+		<ProjectReference Include="..\SecondLargestElementInArray\SecondLargestElementInArray.csproj" />
+		<ProjectReference Include="ArraySortingChecker\ArraySortingChecker.csproj" />
+	</ItemGroup>
 
 </Project>
