@@ -4,6 +4,8 @@
     {
         public static bool IsSorted(int[] array)
         {
+            if (array == null || array.Length < 2)
+                return true;
             int ascCount = 1;
             int dscCount = 1;
             for (int i = 0; i < array.Length-1; i++)

@@ -2,6 +2,7 @@
 using LargestElementInArray;
 using SecondLargestElementInArray;
 using ArraySortingChecker;
+using RemoveDuplicatesInArray;
 
 namespace AllArrayPrograms
 {
@@ -11,7 +12,8 @@ namespace AllArrayPrograms
         {
             { 0, RunLargestElementProgram },
             { 1, RunSecondLargestElementProgram },
-            { 2, RunArraySortChecker}
+            { 2, RunArraySortChecker},
+            { 3, RemoveDuplicates}
         };
 
         public static void Main(string[] args)
@@ -22,6 +24,7 @@ namespace AllArrayPrograms
                 Console.WriteLine("0: Largest Element in an array");
                 Console.WriteLine("1: Second Largest Element in an array");
                 Console.WriteLine("2: Check if an Array is Sorted");
+                Console.WriteLine("3: Remove Duplicates in-place from Sorted Array");
                 Console.WriteLine("-1: Exit");
 
                 if (!int.TryParse(Console.ReadLine(), out int choice))
@@ -71,6 +74,15 @@ namespace AllArrayPrograms
 
             return array;
         }
+
+        private static void PrintArray(int[] opArray, int n)
+        {
+            for(int i =0; i<n;i++)
+            {
+                Console.Write(opArray[i] + " ");
+            }
+            Console.WriteLine("\n");
+        }
         private static void RunLargestElementProgram()
         {
             Console.WriteLine("\nFind Largest Element Program:");
@@ -85,7 +97,6 @@ namespace AllArrayPrograms
             int secondLargestElement = SecondLargestElement.FindSecondLargestElement(array);
             Console.WriteLine($"Second largest element in the array: {secondLargestElement}");
         }
-
         private static void RunArraySortChecker()
         {
             Console.WriteLine("\nCheck If an Array is Sorted Program:");
@@ -93,6 +104,16 @@ namespace AllArrayPrograms
 
             bool isSorted = SortChecker.IsSorted(array);
             Console.WriteLine($"Is the array sorted? {isSorted}");
+        }
+
+        private static void RemoveDuplicates()
+        {
+            int[] array = InputArray();
+            //int opArrayLength = DistinctElements.RemoveDuplicateElementsMethod1(array);
+            int opArrayLength = DistinctElements.RemoveDuplicateElementsMethod2(array);
+            Console.WriteLine("Output Array with Distinct elements is:");
+            PrintArray(array, opArrayLength);
+
         }
     }
 }
