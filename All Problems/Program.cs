@@ -7,6 +7,8 @@ using LeftRotateArrayByK;
 using MoveKtoEnd;
 using LinearSearch;
 using UnionOf2Arrays;
+using IntersectionOf2Arrays;
+using Microsoft.VisualBasic;
 
 namespace AllArrayPrograms
 {
@@ -21,7 +23,8 @@ namespace AllArrayPrograms
             { 4, RotateArrayByK },
             { 5, MovAllKElementsToEnd },
             { 6, LinearSearch},
-            { 7, UnionOf2Arrays}
+            { 7, UnionOf2Arrays},
+            { 8, InterSectionOf2Arrays}
         };
 
         
@@ -38,6 +41,8 @@ namespace AllArrayPrograms
                 Console.WriteLine("4: Left Rotate Array by K Places");
                 Console.WriteLine("5: Move All K values to the end");
                 Console.WriteLine("6: Linear Search");
+                Console.WriteLine("7: Union Of 2 Arrays");
+                Console.WriteLine("8: Intersection Of 2 Arrays");
                 Console.WriteLine("-1: Exit");
 
                 if (!int.TryParse(Console.ReadLine(), out int choice))
@@ -165,8 +170,19 @@ namespace AllArrayPrograms
         {
             int[] arrayA = InputArray();
             int[] arrayB = InputArray();
-            int[] result = Union.FindUnion(arrayA, arrayB);
+            int[] result = Union.FindUnionMethod1(arrayA, arrayB);
+            //int[] result = Union.FindUnionMethod2(arrayA, arrayB);//works only for sorted arrays.
             Console.WriteLine("Union of 2 Arrays");
+            PrintArray(result, result.Length);
+        }
+        private static void InterSectionOf2Arrays()
+        {
+            int[] arrayA = InputArray();
+            int[] arrayB = InputArray();
+            //int[] result = Intersection.FindInterSectionMethod1(arrayA, arrayB);
+            //int[] result = Intersection.FindIntersectionMethod2(arrayA, arrayB);
+            int[] result = Intersection.FindInterSectionMethod3(arrayA, arrayB);// Works only for sorted arrays
+            Console.WriteLine("Intersection of 2 Arrays");
             PrintArray(result, result.Length);
         }
 
