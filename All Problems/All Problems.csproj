@@ -15,6 +15,7 @@
 		<ProjectReference Include="..\LargestElementInArray\LargestElementInArray.csproj" />
 		<ProjectReference Include="..\SecondLargestElementInArray\SecondLargestElementInArray.csproj" />
 		<ProjectReference Include="ArraySortingChecker\ArraySortingChecker.csproj" />
+		<ProjectReference Include="FindMaxConsecutiveOnes\FindMaxConsecutiveOnes.csproj" />
 		<ProjectReference Include="FindMissingElementInArray\FindMissingElementInArray.csproj" />
 		<ProjectReference Include="IntersectionOf2Arrays\IntersectionOf2Arrays.csproj" />
 		<ProjectReference Include="LeftRotateArrayByK\LeftRotateArrayByK.csproj" />

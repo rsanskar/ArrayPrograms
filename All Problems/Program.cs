@@ -1,5 +1,4 @@
-﻿using System;
-using LargestElementInArray;
+﻿using LargestElementInArray;
 using SecondLargestElementInArray;
 using ArraySortingChecker;
 using RemoveDuplicatesInArray;
@@ -9,7 +8,7 @@ using LinearSearch;
 using UnionOf2Arrays;
 using IntersectionOf2Arrays;
 using FindMissingElementInArray;
-using Microsoft.VisualBasic;
+using FindMaxConsecutiveOnes;
 
 namespace AllArrayPrograms
 {
@@ -26,8 +25,16 @@ namespace AllArrayPrograms
             { 6, LinearSearch},
             { 7, UnionOf2Arrays},
             { 8, InterSectionOf2Arrays},
-            { 9, FindMissingElementInArray}
+            { 9, FindMissingElementInArray},
+            { 10, FindMaxConsecutiveOnes}
         };
+
+        private static void FindMaxConsecutiveOnes()
+        {
+            int[] inpArray = InputArray();
+            int max1s = MaxConsecutiveOnes.FindMax1s(inpArray);
+            Console.WriteLine("abc");
+        }
 
         private static void FindMissingElementInArray()
         {
