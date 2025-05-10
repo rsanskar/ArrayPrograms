@@ -8,6 +8,7 @@ using MoveKtoEnd;
 using LinearSearch;
 using UnionOf2Arrays;
 using IntersectionOf2Arrays;
+using FindMissingElementInArray;
 using Microsoft.VisualBasic;
 
 namespace AllArrayPrograms
@@ -24,10 +25,18 @@ namespace AllArrayPrograms
             { 5, MovAllKElementsToEnd },
             { 6, LinearSearch},
             { 7, UnionOf2Arrays},
-            { 8, InterSectionOf2Arrays}
+            { 8, InterSectionOf2Arrays},
+            { 9, FindMissingElementInArray}
         };
 
-        
+        private static void FindMissingElementInArray()
+        {
+            int[] inpArray = InputArray();
+            //int missingElement = FindMissingElement.FindMethod1(inpArray);
+            //int missingElement = FindMissingElement.FindMethod2(inpArray);
+            int missingElement = FindMissingElement.FindMethod3(inpArray);
+            Console.WriteLine($"Missing Element in an array is : {missingElement}");
+        }
 
         public static void Main(string[] args)
         {
@@ -43,6 +52,7 @@ namespace AllArrayPrograms
                 Console.WriteLine("6: Linear Search");
                 Console.WriteLine("7: Union Of 2 Arrays");
                 Console.WriteLine("8: Intersection Of 2 Arrays");
+                Console.WriteLine("9: Find missing element");
                 Console.WriteLine("-1: Exit");
 
                 if (!int.TryParse(Console.ReadLine(), out int choice))
