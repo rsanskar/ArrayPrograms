@@ -15,7 +15,11 @@
 		<ProjectReference Include="..\LargestElementInArray\LargestElementInArray.csproj" />
 		<ProjectReference Include="..\SecondLargestElementInArray\SecondLargestElementInArray.csproj" />
 		<ProjectReference Include="ArraySortingChecker\ArraySortingChecker.csproj" />
+		<ProjectReference Include="LeftRotateArrayByK\LeftRotateArrayByK.csproj" />
+		<ProjectReference Include="LinearSearch\LinearSearch.csproj" />
+		<ProjectReference Include="MoveKtoEnd\MoveKtoEnd.csproj" />
 		<ProjectReference Include="RemoveDuplicatesInArray\RemoveDuplicatesInArray.csproj" />
+		<ProjectReference Include="UnionOf2Arrays\UnionOf2Arrays.csproj" />
 	</ItemGroup>
 
 </Project>

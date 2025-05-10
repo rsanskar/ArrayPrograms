@@ -25,8 +25,8 @@
             {
                 if (array[i] != array[j])
                 {
+                    array[i+1] = array[j];
                     i++;
-                    array[i] = array[j];
                     j++;
                 }
                 else

@@ -3,6 +3,10 @@ using LargestElementInArray;
 using SecondLargestElementInArray;
 using ArraySortingChecker;
 using RemoveDuplicatesInArray;
+using LeftRotateArrayByK;
+using MoveKtoEnd;
+using LinearSearch;
+using UnionOf2Arrays;
 
 namespace AllArrayPrograms
 {
@@ -13,8 +17,14 @@ namespace AllArrayPrograms
             { 0, RunLargestElementProgram },
             { 1, RunSecondLargestElementProgram },
             { 2, RunArraySortChecker},
-            { 3, RemoveDuplicates}
+            { 3, RemoveDuplicates},
+            { 4, RotateArrayByK },
+            { 5, MovAllKElementsToEnd },
+            { 6, LinearSearch},
+            { 7, UnionOf2Arrays}
         };
+
+        
 
         public static void Main(string[] args)
         {
@@ -25,6 +35,9 @@ namespace AllArrayPrograms
                 Console.WriteLine("1: Second Largest Element in an array");
                 Console.WriteLine("2: Check if an Array is Sorted");
                 Console.WriteLine("3: Remove Duplicates in-place from Sorted Array");
+                Console.WriteLine("4: Left Rotate Array by K Places");
+                Console.WriteLine("5: Move All K values to the end");
+                Console.WriteLine("6: Linear Search");
                 Console.WriteLine("-1: Exit");
 
                 if (!int.TryParse(Console.ReadLine(), out int choice))
@@ -115,5 +128,47 @@ namespace AllArrayPrograms
             PrintArray(array, opArrayLength);
 
         }
+        private static void RotateArrayByK()
+        {
+            int[] array = InputArray();
+            int k;
+            Console.WriteLine("Enter the number K to LeftShit array by k times");
+            int.TryParse(Console.ReadLine(), out k);
+            //int[] opArray = LeftRotate.RotateMethod1(array,k);
+            int[] opArray = LeftRotate.RotateMethod2(array,k);
+            Console.WriteLine("Output Array after shifting left for k times:");
+            PrintArray(opArray, opArray.Length);
+
+        }
+
+        private static void MovAllKElementsToEnd()
+        {
+            int[] array = InputArray();
+            int k;
+            Console.WriteLine("Enter the number K to move all K's to last");
+            int.TryParse(Console.ReadLine(), out k);
+            MoveKToLast.MoveElements(array, k);
+            PrintArray(array,array.Length);
+        }
+        private static void LinearSearch()
+        {
+            int[] inpArray = InputArray();
+            Console.WriteLine("Enter an element Key to find in an array");
+            int Key;
+            int.TryParse(Console.ReadLine(), out Key);
+            int index = LinearSearching.Search(inpArray, Key);
+            Console.WriteLine($"Given Key {Key} found at : {index} \n");
+
+
+        }
+        private static void UnionOf2Arrays()
+        {
+            int[] arrayA = InputArray();
+            int[] arrayB = InputArray();
+            int[] result = Union.FindUnion(arrayA, arrayB);
+            Console.WriteLine("Union of 2 Arrays");
+            PrintArray(result, result.Length);
+        }
+
     }
 }
