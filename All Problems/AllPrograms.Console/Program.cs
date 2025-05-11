@@ -9,6 +9,7 @@ using UnionOf2Arrays;
 using IntersectionOf2Arrays;
 using FindMissingElementInArray;
 using FindMaxConsecutiveOnes;
+using SingleNumberInArray;
 
 namespace AllArrayPrograms
 {
@@ -26,23 +27,16 @@ namespace AllArrayPrograms
             { 7, UnionOf2Arrays},
             { 8, InterSectionOf2Arrays},
             { 9, FindMissingElementInArray},
-            { 10, FindMaxConsecutiveOnes}
+            { 10, FindMaxConsecutiveOnes},
+            { 11, SingleNumberInArray}
         };
 
-        private static void FindMaxConsecutiveOnes()
+        private static void SingleNumberInArray()
         {
             int[] inpArray = InputArray();
-            int max1s = MaxConsecutiveOnes.FindMax1s(inpArray);
-            Console.WriteLine($"max consecutiveOnes in the given array is : {max1s}");
-        }
-
-        private static void FindMissingElementInArray()
-        {
-            int[] inpArray = InputArray();
-            //int missingElement = FindMissingElement.FindMethod1(inpArray);
-            //int missingElement = FindMissingElement.FindMethod2(inpArray);
-            int missingElement = FindMissingElement.FindMethod3(inpArray);
-            Console.WriteLine($"Missing Element in an array is : {missingElement}");
+            //int singleNumber = Solution.SingleNumberMethod1(inpArray);
+            int singleNumber = Solution.SingleNumberMethod2(inpArray);
+            Console.WriteLine($"Single number in the give array is : {singleNumber}");
         }
 
         public static void Main(string[] args)
@@ -50,16 +44,18 @@ namespace AllArrayPrograms
             while (true)
             {
                 Console.WriteLine("Select a program to run:\n");
-                Console.WriteLine("0: Largest Element in an array");
-                Console.WriteLine("1: Second Largest Element in an array");
-                Console.WriteLine("2: Check if an Array is Sorted");
-                Console.WriteLine("3: Remove Duplicates in-place from Sorted Array");
-                Console.WriteLine("4: Left Rotate Array by K Places");
-                Console.WriteLine("5: Move All K values to the end");
-                Console.WriteLine("6: Linear Search");
-                Console.WriteLine("7: Union Of 2 Arrays");
-                Console.WriteLine("8: Intersection Of 2 Arrays");
-                Console.WriteLine("9: Find missing element");
+                Console.WriteLine("0 : Largest Element in an array");
+                Console.WriteLine("1 : Second Largest Element in an array");
+                Console.WriteLine("2 : Check if an Array is Sorted");
+                Console.WriteLine("3 : Remove Duplicates in-place from Sorted Array");
+                Console.WriteLine("4 : Left Rotate Array by K Places");
+                Console.WriteLine("5 : Move All K values to the end");
+                Console.WriteLine("6 : Linear Search");
+                Console.WriteLine("7 : Union Of 2 Arrays");
+                Console.WriteLine("8 : Intersection Of 2 Arrays");
+                Console.WriteLine("9 : Find missing element");
+                Console.WriteLine("10: Find Max Consecitive 1s");
+                Console.WriteLine("11: Find Single Number In Array");
                 Console.WriteLine("-1: Exit");
 
                 if (!int.TryParse(Console.ReadLine(), out int choice))
@@ -85,7 +81,6 @@ namespace AllArrayPrograms
             }
 
         }
-
         private static int[] InputArray()
         {
             Console.Write("Enter number of elements:");
@@ -109,7 +104,6 @@ namespace AllArrayPrograms
 
             return array;
         }
-
         private static void PrintArray(int[] opArray, int n)
         {
             for (int i = 0; i < n; i++)
@@ -140,7 +134,6 @@ namespace AllArrayPrograms
             bool isSorted = SortChecker.IsSorted(array);
             Console.WriteLine($"Is the array sorted? {isSorted}");
         }
-
         private static void RemoveDuplicates()
         {
             int[] array = InputArray();
@@ -162,7 +155,6 @@ namespace AllArrayPrograms
             PrintArray(opArray, opArray.Length);
 
         }
-
         private static void MovAllKElementsToEnd()
         {
             int[] array = InputArray();
@@ -201,6 +193,21 @@ namespace AllArrayPrograms
             int[] result = Intersection.FindInterSectionMethod3(arrayA, arrayB);// Works only for sorted arrays
             Console.WriteLine("Intersection of 2 Arrays");
             PrintArray(result, result.Length);
+        }
+        private static void FindMaxConsecutiveOnes()
+        {
+            int[] inpArray = InputArray();
+            //int max1s = MaxConsecutiveOnes.FindMax1sMethod1(inpArray);
+            int max1s = MaxConsecutiveOnes.FindMax1sMethod2(inpArray);
+            Console.WriteLine($"max consecutiveOnes in the given array is : {max1s}");
+        }
+        private static void FindMissingElementInArray()
+        {
+            int[] inpArray = InputArray();
+            //int missingElement = FindMissingElement.FindMethod1(inpArray);
+            //int missingElement = FindMissingElement.FindMethod2(inpArray);
+            int missingElement = FindMissingElement.FindMethod3(inpArray);
+            Console.WriteLine($"Missing Element in an array is : {missingElement}");
         }
 
     }

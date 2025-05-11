@@ -9,7 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Console Application", "Cons
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business Logic", "Business Logic", "{C56CC963-007E-430D-B094-07ACDF563E34}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LargestElementInArray", "..\AllPrograms.Logic\LargestElementInArray\LargestElementInArray.csproj", "{F790D960-C363-4E04-8A9E-DC4573AE1452}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LargestElementInArray", "..\AllPrograms.Logic\LargestElementInArray\LargestElementInArray.csproj", "{F790D960-C363-4E04-8A9E-DC4573AE1452}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SecondLargestElementInArray", "..\AllPrograms.Logic\SecondLargestElementInArray\SecondLargestElementInArray.csproj", "{105D915E-0FC6-456C-B97D-6B58469A8628}"
 EndProject
@@ -30,6 +30,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FindMissingElementInArray", "..\AllPrograms.Logic\FindMissingElementInArray\FindMissingElementInArray.csproj", "{66F2D1B6-8B3A-40B8-8560-6DCF61C31839}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FindMaxConsecutiveOnes", "..\AllPrograms.Logic\FindMaxConsecutiveOnes\FindMaxConsecutiveOnes.csproj", "{D07B71F6-A79D-41A5-8EB0-E595156791D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingleNumberInArray", "..\AllPrograms.Logic\SingleNumberInArray\SingleNumberInArray.csproj", "{42BDF359-9CFA-4467-BC14-E2C32F1A4226}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -85,6 +87,10 @@ Global
 		{D07B71F6-A79D-41A5-8EB0-E595156791D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D07B71F6-A79D-41A5-8EB0-E595156791D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D07B71F6-A79D-41A5-8EB0-E595156791D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42BDF359-9CFA-4467-BC14-E2C32F1A4226}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42BDF359-9CFA-4467-BC14-E2C32F1A4226}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42BDF359-9CFA-4467-BC14-E2C32F1A4226}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42BDF359-9CFA-4467-BC14-E2C32F1A4226}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -102,6 +108,7 @@ Global
 		{ED164CDC-89F6-4AFE-BFE7-F9B7527416EC} = {C56CC963-007E-430D-B094-07ACDF563E34}
 		{66F2D1B6-8B3A-40B8-8560-6DCF61C31839} = {C56CC963-007E-430D-B094-07ACDF563E34}
 		{D07B71F6-A79D-41A5-8EB0-E595156791D1} = {C56CC963-007E-430D-B094-07ACDF563E34}
+		{42BDF359-9CFA-4467-BC14-E2C32F1A4226} = {C56CC963-007E-430D-B094-07ACDF563E34}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {144249E9-F917-4866-A1B1-89E38358BE18}

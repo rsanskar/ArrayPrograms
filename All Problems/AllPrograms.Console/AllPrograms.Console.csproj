@@ -18,6 +18,7 @@
     <ProjectReference Include="..\AllPrograms.Logic\MoveKtoEnd\MoveKtoEnd.csproj" />
     <ProjectReference Include="..\AllPrograms.Logic\RemoveDuplicatesInArray\RemoveDuplicatesInArray.csproj" />
     <ProjectReference Include="..\AllPrograms.Logic\SecondLargestElementInArray\SecondLargestElementInArray.csproj" />
+    <ProjectReference Include="..\AllPrograms.Logic\SingleNumberInArray\SingleNumberInArray.csproj" />
     <ProjectReference Include="..\AllPrograms.Logic\UnionOf2Arrays\UnionOf2Arrays.csproj" />
   </ItemGroup>
 
