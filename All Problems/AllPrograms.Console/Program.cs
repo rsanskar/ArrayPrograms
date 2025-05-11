@@ -33,7 +33,7 @@ namespace AllArrayPrograms
         {
             int[] inpArray = InputArray();
             int max1s = MaxConsecutiveOnes.FindMax1s(inpArray);
-            Console.WriteLine("abc");
+            Console.WriteLine($"max consecutiveOnes in the given array is : {max1s}");
         }
 
         private static void FindMissingElementInArray()
@@ -112,7 +112,7 @@ namespace AllArrayPrograms
 
         private static void PrintArray(int[] opArray, int n)
         {
-            for(int i =0; i<n;i++)
+            for (int i = 0; i < n; i++)
             {
                 Console.Write(opArray[i] + " ");
             }
@@ -157,7 +157,7 @@ namespace AllArrayPrograms
             Console.WriteLine("Enter the number K to LeftShit array by k times");
             int.TryParse(Console.ReadLine(), out k);
             //int[] opArray = LeftRotate.RotateMethod1(array,k);
-            int[] opArray = LeftRotate.RotateMethod2(array,k);
+            int[] opArray = LeftRotate.RotateMethod2(array, k);
             Console.WriteLine("Output Array after shifting left for k times:");
             PrintArray(opArray, opArray.Length);
 
@@ -170,7 +170,7 @@ namespace AllArrayPrograms
             Console.WriteLine("Enter the number K to move all K's to last");
             int.TryParse(Console.ReadLine(), out k);
             MoveKToLast.MoveElements(array, k);
-            PrintArray(array,array.Length);
+            PrintArray(array, array.Length);
         }
         private static void LinearSearch()
         {

@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AllPrograms.Logic\ArraySortingChecker\ArraySortingChecker.csproj" />
+    <ProjectReference Include="..\AllPrograms.Logic\FindMaxConsecutiveOnes\FindMaxConsecutiveOnes.csproj" />
+    <ProjectReference Include="..\AllPrograms.Logic\FindMissingElementInArray\FindMissingElementInArray.csproj" />
+    <ProjectReference Include="..\AllPrograms.Logic\IntersectionOf2Arrays\IntersectionOf2Arrays.csproj" />
+    <ProjectReference Include="..\AllPrograms.Logic\LargestElementInArray\LargestElementInArray.csproj" />
+    <ProjectReference Include="..\AllPrograms.Logic\LeftRotateArrayByK\LeftRotateArrayByK.csproj" />
+    <ProjectReference Include="..\AllPrograms.Logic\LinearSearch\LinearSearch.csproj" />
+    <ProjectReference Include="..\AllPrograms.Logic\MoveKtoEnd\MoveKtoEnd.csproj" />
+    <ProjectReference Include="..\AllPrograms.Logic\RemoveDuplicatesInArray\RemoveDuplicatesInArray.csproj" />
+    <ProjectReference Include="..\AllPrograms.Logic\SecondLargestElementInArray\SecondLargestElementInArray.csproj" />
+    <ProjectReference Include="..\AllPrograms.Logic\UnionOf2Arrays\UnionOf2Arrays.csproj" />
+  </ItemGroup>
+
+</Project>
