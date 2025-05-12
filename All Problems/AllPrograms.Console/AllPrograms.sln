@@ -33,6 +33,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FindMaxConsecutiveOnes", ".
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingleNumberInArray", "..\AllPrograms.Logic\SingleNumberInArray\SingleNumberInArray.csproj", "{42BDF359-9CFA-4467-BC14-E2C32F1A4226}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LongestSubArrayWithSumK", "..\AllPrograms.Logic\LongestSubArrayWithSumK\LongestSubArrayWithSumK.csproj", "{460CF3D3-7FB2-4209-840F-350D09924CF7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -91,6 +93,10 @@ Global
 		{42BDF359-9CFA-4467-BC14-E2C32F1A4226}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42BDF359-9CFA-4467-BC14-E2C32F1A4226}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42BDF359-9CFA-4467-BC14-E2C32F1A4226}.Release|Any CPU.Build.0 = Release|Any CPU
+		{460CF3D3-7FB2-4209-840F-350D09924CF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{460CF3D3-7FB2-4209-840F-350D09924CF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{460CF3D3-7FB2-4209-840F-350D09924CF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{460CF3D3-7FB2-4209-840F-350D09924CF7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -109,6 +115,7 @@ Global
 		{66F2D1B6-8B3A-40B8-8560-6DCF61C31839} = {C56CC963-007E-430D-B094-07ACDF563E34}
 		{D07B71F6-A79D-41A5-8EB0-E595156791D1} = {C56CC963-007E-430D-B094-07ACDF563E34}
 		{42BDF359-9CFA-4467-BC14-E2C32F1A4226} = {C56CC963-007E-430D-B094-07ACDF563E34}
+		{460CF3D3-7FB2-4209-840F-350D09924CF7} = {C56CC963-007E-430D-B094-07ACDF563E34}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {144249E9-F917-4866-A1B1-89E38358BE18}

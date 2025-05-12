@@ -10,6 +10,7 @@ using IntersectionOf2Arrays;
 using FindMissingElementInArray;
 using FindMaxConsecutiveOnes;
 using SingleNumberInArray;
+using LongestSubArrayWithSumK;
 
 namespace AllArrayPrograms
 {
@@ -28,8 +29,21 @@ namespace AllArrayPrograms
             { 8, InterSectionOf2Arrays},
             { 9, FindMissingElementInArray},
             { 10, FindMaxConsecutiveOnes},
-            { 11, SingleNumberInArray}
+            { 11, SingleNumberInArray},
+            { 12, LongestSubArrayWithSumK }
         };
+
+        private static void LongestSubArrayWithSumK()
+        {
+            int[] inpArray = InputArray();
+            Console.WriteLine("Enter the K value to find the length of longest sub array");
+            int.TryParse(Console.ReadLine(), out int K);
+            //int lsaLength = LongestSubArrayWithSumKSolution.FindLongestSubArrayWithSumKMethod1(inpArray,K);
+            //int lsaLength = LongestSubArrayWithSumKSolution.FindLongestSubArrayWithSumKMethod2(inpArray,K);
+            int lsaLength = LongestSubArrayWithSumKSolution.FindLongestSubArrayWithSumKMethod3(inpArray,K);
+            Console.WriteLine($"length of longest sub array with given sum {K} is : {lsaLength} \n");
+
+        }
 
         private static void SingleNumberInArray()
         {
@@ -56,6 +70,7 @@ namespace AllArrayPrograms
                 Console.WriteLine("9 : Find missing element");
                 Console.WriteLine("10: Find Max Consecitive 1s");
                 Console.WriteLine("11: Find Single Number In Array");
+                Console.WriteLine("12: Longest Subarray with given Sum K(Positives)");
                 Console.WriteLine("-1: Exit");
 
                 if (!int.TryParse(Console.ReadLine(), out int choice))
