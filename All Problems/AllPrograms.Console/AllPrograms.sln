@@ -35,6 +35,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingleNumberInArray", "..\A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LongestSubArrayWithSumK", "..\AllPrograms.Logic\LongestSubArrayWithSumK\LongestSubArrayWithSumK.csproj", "{460CF3D3-7FB2-4209-840F-350D09924CF7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwoSumProblem", "..\AllPrograms.Logic\TwoSumProblem\TwoSumProblem.csproj", "{0D915729-7ECF-4261-AE27-E32353573BEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortColorsProblem", "..\SortColorsProblem\SortColorsProblem.csproj", "{9525299A-4576-4E12-A97E-7EB775366D82}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -97,6 +101,14 @@ Global
 		{460CF3D3-7FB2-4209-840F-350D09924CF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{460CF3D3-7FB2-4209-840F-350D09924CF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{460CF3D3-7FB2-4209-840F-350D09924CF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D915729-7ECF-4261-AE27-E32353573BEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D915729-7ECF-4261-AE27-E32353573BEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D915729-7ECF-4261-AE27-E32353573BEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D915729-7ECF-4261-AE27-E32353573BEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9525299A-4576-4E12-A97E-7EB775366D82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9525299A-4576-4E12-A97E-7EB775366D82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9525299A-4576-4E12-A97E-7EB775366D82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9525299A-4576-4E12-A97E-7EB775366D82}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -116,6 +128,8 @@ Global
 		{D07B71F6-A79D-41A5-8EB0-E595156791D1} = {C56CC963-007E-430D-B094-07ACDF563E34}
 		{42BDF359-9CFA-4467-BC14-E2C32F1A4226} = {C56CC963-007E-430D-B094-07ACDF563E34}
 		{460CF3D3-7FB2-4209-840F-350D09924CF7} = {C56CC963-007E-430D-B094-07ACDF563E34}
+		{0D915729-7ECF-4261-AE27-E32353573BEE} = {C56CC963-007E-430D-B094-07ACDF563E34}
+		{9525299A-4576-4E12-A97E-7EB775366D82} = {C56CC963-007E-430D-B094-07ACDF563E34}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {144249E9-F917-4866-A1B1-89E38358BE18}

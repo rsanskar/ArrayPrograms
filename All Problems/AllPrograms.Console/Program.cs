@@ -11,6 +11,8 @@ using FindMissingElementInArray;
 using FindMaxConsecutiveOnes;
 using SingleNumberInArray;
 using LongestSubArrayWithSumK;
+using TwoSumProblem;
+using SortColorsProblem;
 
 namespace AllArrayPrograms
 {
@@ -30,8 +32,33 @@ namespace AllArrayPrograms
             { 9, FindMissingElementInArray},
             { 10, FindMaxConsecutiveOnes},
             { 11, SingleNumberInArray},
-            { 12, LongestSubArrayWithSumK }
+            { 12, LongestSubArrayWithSumK },
+            { 13, TwoSumWithTarget },
+            { 14, Sort0s1sAnd2s }
+
         };
+
+        private static void Sort0s1sAnd2s()
+        {
+            Console.WriteLine("Enter the 0's 1's and 2's in an array");
+            int[] inpArray = InputArray();
+            //SortColors.SortColorsMethod1(inpArray);
+            SortColors.SortColorsMethod2(inpArray);
+            Console.WriteLine("Sorted Array is:");
+            PrintArray(inpArray,inpArray.Length);
+
+        }
+
+        private static void TwoSumWithTarget()
+        {
+            int[] inpArray = InputArray();
+            Console.WriteLine("Enter the target value to find the indices ");
+            int.TryParse(Console.ReadLine(), out int target);
+            //int[] result = TwoSumProblemClass.TwoSumMethod1(inpArray, target);
+            int[] result = TwoSumProblemClass.TwoSumMethod2(inpArray, target);
+            Console.WriteLine($"indices are {result[0]} {result[1]}");
+
+        }
 
         private static void LongestSubArrayWithSumK()
         {
@@ -71,6 +98,8 @@ namespace AllArrayPrograms
                 Console.WriteLine("10: Find Max Consecitive 1s");
                 Console.WriteLine("11: Find Single Number In Array");
                 Console.WriteLine("12: Longest Subarray with given Sum K(Positives)");
+                Console.WriteLine("13: Two Sum Problem returns the indeces of the given target");
+                Console.WriteLine("14: Sort an array of 0's 1's and 2's");
                 Console.WriteLine("-1: Exit");
 
                 if (!int.TryParse(Console.ReadLine(), out int choice))

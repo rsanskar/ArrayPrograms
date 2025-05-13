@@ -20,7 +20,9 @@
     <ProjectReference Include="..\AllPrograms.Logic\RemoveDuplicatesInArray\RemoveDuplicatesInArray.csproj" />
     <ProjectReference Include="..\AllPrograms.Logic\SecondLargestElementInArray\SecondLargestElementInArray.csproj" />
     <ProjectReference Include="..\AllPrograms.Logic\SingleNumberInArray\SingleNumberInArray.csproj" />
+    <ProjectReference Include="..\AllPrograms.Logic\TwoSumProblem\TwoSumProblem.csproj" />
     <ProjectReference Include="..\AllPrograms.Logic\UnionOf2Arrays\UnionOf2Arrays.csproj" />
+    <ProjectReference Include="..\SortColorsProblem\SortColorsProblem.csproj" />
   </ItemGroup>
 
 </Project>
