@@ -39,6 +39,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TwoSumProblem", "..\AllProg
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SortColorsProblem", "..\AllPrograms.Logic\SortColorsProblem\SortColorsProblem.csproj", "{51CB32DA-9E93-4767-9A2B-E6D291F1381C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MajorityElement", "..\AllPrograms.Logic\MajorityElement\MajorityElement.csproj", "{AF261785-43BD-4E30-B975-4C7600499122}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -109,6 +111,10 @@ Global
 		{51CB32DA-9E93-4767-9A2B-E6D291F1381C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51CB32DA-9E93-4767-9A2B-E6D291F1381C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51CB32DA-9E93-4767-9A2B-E6D291F1381C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF261785-43BD-4E30-B975-4C7600499122}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF261785-43BD-4E30-B975-4C7600499122}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF261785-43BD-4E30-B975-4C7600499122}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF261785-43BD-4E30-B975-4C7600499122}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -130,6 +136,7 @@ Global
 		{460CF3D3-7FB2-4209-840F-350D09924CF7} = {C56CC963-007E-430D-B094-07ACDF563E34}
 		{0D915729-7ECF-4261-AE27-E32353573BEE} = {C56CC963-007E-430D-B094-07ACDF563E34}
 		{51CB32DA-9E93-4767-9A2B-E6D291F1381C} = {C56CC963-007E-430D-B094-07ACDF563E34}
+		{AF261785-43BD-4E30-B975-4C7600499122} = {C56CC963-007E-430D-B094-07ACDF563E34}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {144249E9-F917-4866-A1B1-89E38358BE18}

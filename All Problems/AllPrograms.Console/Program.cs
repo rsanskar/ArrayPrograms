@@ -13,6 +13,7 @@ using SingleNumberInArray;
 using LongestSubArrayWithSumK;
 using TwoSumProblem;
 using SortColorsProblem;
+using MajorityElement;
 
 namespace AllArrayPrograms
 {
@@ -34,50 +35,21 @@ namespace AllArrayPrograms
             { 11, SingleNumberInArray},
             { 12, LongestSubArrayWithSumK },
             { 13, TwoSumWithTarget },
-            { 14, Sort0s1sAnd2s }
+            { 14, Sort0s1sAnd2s },
+            { 15, MajorityElement }
+
 
         };
 
-        private static void Sort0s1sAnd2s()
-        {
-            Console.WriteLine("Enter the 0's 1's and 2's in an array");
-            int[] inpArray = InputArray();
-            //SortColors.SortColorsMethod1(inpArray);
-            SortColors.SortColorsMethod2(inpArray);
-            Console.WriteLine("Sorted Array is:");
-            PrintArray(inpArray,inpArray.Length);
-
-        }
-
-        private static void TwoSumWithTarget()
+        private static void MajorityElement()
         {
             int[] inpArray = InputArray();
-            Console.WriteLine("Enter the target value to find the indices ");
-            int.TryParse(Console.ReadLine(), out int target);
-            //int[] result = TwoSumProblemClass.TwoSumMethod1(inpArray, target);
-            int[] result = TwoSumProblemClass.TwoSumMethod2(inpArray, target);
-            Console.WriteLine($"indices are {result[0]} {result[1]}");
-
-        }
-
-        private static void LongestSubArrayWithSumK()
-        {
-            int[] inpArray = InputArray();
-            Console.WriteLine("Enter the K value to find the length of longest sub array");
-            int.TryParse(Console.ReadLine(), out int K);
-            //int lsaLength = LongestSubArrayWithSumKSolution.FindLongestSubArrayWithSumKMethod1(inpArray,K);
-            //int lsaLength = LongestSubArrayWithSumKSolution.FindLongestSubArrayWithSumKMethod2(inpArray,K);
-            int lsaLength = LongestSubArrayWithSumKSolution.FindLongestSubArrayWithSumKMethod3(inpArray,K);
-            Console.WriteLine($"length of longest sub array with given sum {K} is : {lsaLength} \n");
-
-        }
-
-        private static void SingleNumberInArray()
-        {
-            int[] inpArray = InputArray();
-            //int singleNumber = Solution.SingleNumberMethod1(inpArray);
-            int singleNumber = Solution.SingleNumberMethod2(inpArray);
-            Console.WriteLine($"Single number in the give array is : {singleNumber}");
+            int majorityElement1 = MajorityElementClass.FindMajorityElementMethod1(inpArray);
+            int majorityElement2 = MajorityElementClass.FindMajorityElementMethod2(inpArray);
+            int majorityElement3 = MajorityElementClass.FindMajorityElementMethod3(inpArray);
+            Console.WriteLine($"Majority element in given array is {majorityElement1}");
+            Console.WriteLine($"Majority element in given array is {majorityElement2}");
+            Console.WriteLine($"Majority element in given array is {majorityElement3}");
         }
 
         public static void Main(string[] args)
@@ -100,6 +72,7 @@ namespace AllArrayPrograms
                 Console.WriteLine("12: Longest Subarray with given Sum K(Positives)");
                 Console.WriteLine("13: Two Sum Problem returns the indeces of the given target");
                 Console.WriteLine("14: Sort an array of 0's 1's and 2's");
+                Console.WriteLine("15: Find the Majority Element that occurs more than N/2 times");
                 Console.WriteLine("-1: Exit");
 
                 if (!int.TryParse(Console.ReadLine(), out int choice))
@@ -252,6 +225,48 @@ namespace AllArrayPrograms
             //int missingElement = FindMissingElement.FindMethod2(inpArray);
             int missingElement = FindMissingElement.FindMethod3(inpArray);
             Console.WriteLine($"Missing Element in an array is : {missingElement}");
+        }
+
+        private static void Sort0s1sAnd2s()
+        {
+            Console.WriteLine("Enter the 0's 1's and 2's in an array");
+            int[] inpArray = InputArray();
+            //SortColors.SortColorsMethod1(inpArray);
+            SortColors.SortColorsMethod2(inpArray);
+            Console.WriteLine("Sorted Array is:");
+            PrintArray(inpArray, inpArray.Length);
+
+        }
+
+        private static void TwoSumWithTarget()
+        {
+            int[] inpArray = InputArray();
+            Console.WriteLine("Enter the target value to find the indices ");
+            int.TryParse(Console.ReadLine(), out int target);
+            //int[] result = TwoSumProblemClass.TwoSumMethod1(inpArray, target);
+            int[] result = TwoSumProblemClass.TwoSumMethod2(inpArray, target);
+            Console.WriteLine($"indices are {result[0]} {result[1]}");
+
+        }
+
+        private static void LongestSubArrayWithSumK()
+        {
+            int[] inpArray = InputArray();
+            Console.WriteLine("Enter the K value to find the length of longest sub array");
+            int.TryParse(Console.ReadLine(), out int K);
+            //int lsaLength = LongestSubArrayWithSumKSolution.FindLongestSubArrayWithSumKMethod1(inpArray,K);
+            //int lsaLength = LongestSubArrayWithSumKSolution.FindLongestSubArrayWithSumKMethod2(inpArray,K);
+            int lsaLength = LongestSubArrayWithSumKSolution.FindLongestSubArrayWithSumKMethod3(inpArray, K);
+            Console.WriteLine($"length of longest sub array with given sum {K} is : {lsaLength} \n");
+
+        }
+
+        private static void SingleNumberInArray()
+        {
+            int[] inpArray = InputArray();
+            //int singleNumber = Solution.SingleNumberMethod1(inpArray);
+            int singleNumber = Solution.SingleNumberMethod2(inpArray);
+            Console.WriteLine($"Single number in the give array is : {singleNumber}");
         }
 
     }
