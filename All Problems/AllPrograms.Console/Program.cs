@@ -15,6 +15,8 @@ using TwoSumProblem;
 using SortColorsProblem;
 using MajorityElement;
 using MaxSubArraySum;
+using MaxSubArraySumReturnSubArray;
+using BestTimetoBuyandSellStock;
 
 namespace AllArrayPrograms
 {
@@ -38,10 +40,32 @@ namespace AllArrayPrograms
             { 13, TwoSumWithTarget },
             { 14, Sort0s1sAnd2s },
             { 15, MajorityElement },
-            { 16, MaximumSUbArraySum_KadanesAlgorithm }
+            { 16, MaximumSUbArraySum_KadanesAlgorithm },
+            { 17, MaximumSUbArraySum_KadanesAlgorithm_ReturnSubArray },
+            { 18, BestTimetoBuyandSellStock }
 
 
         };
+
+        private static void BestTimetoBuyandSellStock()
+        {
+            int[] array = InputArray();
+            int maxProfit1 = BestTimetoBuyandSellStockClass.MaxProfitMethod1(array);
+            int maxProfit2 = BestTimetoBuyandSellStockClass.MaxProfitMethod1(array);
+            Console.WriteLine($"Max profit using Method1 is: {maxProfit1}");
+            Console.WriteLine($"Max profit is using Method2 is: {maxProfit2}");
+        }
+
+        private static void MaximumSUbArraySum_KadanesAlgorithm_ReturnSubArray()
+        {
+            int[] array = InputArray();
+            int[] maxSumUsingMethod1 = MaxSubArraySumReturnSubArrayClass.MaxSubArraySumReturnSubArrayMethod1(array);
+            int[] maxSumUsingMethod2 = MaxSubArraySumReturnSubArrayClass.MaxSubArraySumReturnSubArrayMethod1(array);
+            Console.WriteLine("Output using method1");
+            PrintArray(maxSumUsingMethod1, maxSumUsingMethod1.Length);
+            Console.WriteLine("Output using method2");
+            PrintArray(maxSumUsingMethod2, maxSumUsingMethod2.Length);
+        }
 
         private static void MaximumSUbArraySum_KadanesAlgorithm()
         {
@@ -85,6 +109,8 @@ namespace AllArrayPrograms
                 Console.WriteLine("14: Sort an array of 0's 1's and 2's");
                 Console.WriteLine("15: Find the Majority Element that occurs more than N/2 times");
                 Console.WriteLine("16: Maximum Sub Array Sum Kadanes Algorithm");
+                Console.WriteLine("17: Maximum Sub Array Sum and return sub array");
+                Console.WriteLine("18: Best Time to Buy and Sell Stock");
                 Console.WriteLine("-1: Exit");
 
                 if (!int.TryParse(Console.ReadLine(), out int choice))
