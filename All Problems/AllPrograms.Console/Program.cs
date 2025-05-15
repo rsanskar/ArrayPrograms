@@ -14,6 +14,7 @@ using LongestSubArrayWithSumK;
 using TwoSumProblem;
 using SortColorsProblem;
 using MajorityElement;
+using MaxSubArraySum;
 
 namespace AllArrayPrograms
 {
@@ -36,10 +37,20 @@ namespace AllArrayPrograms
             { 12, LongestSubArrayWithSumK },
             { 13, TwoSumWithTarget },
             { 14, Sort0s1sAnd2s },
-            { 15, MajorityElement }
+            { 15, MajorityElement },
+            { 16, MaximumSUbArraySum_KadanesAlgorithm }
 
 
         };
+
+        private static void MaximumSUbArraySum_KadanesAlgorithm()
+        {
+            int[] array = InputArray();
+            int maxSumUsingMethod1 = MaxSubArraySumClass.MaxSubArraySumMethod1(array);
+            int maxSumUsingMethod2 = MaxSubArraySumClass.MaxSubArraySumMethod2(array);
+            Console.WriteLine($"Max SubArray Sum is : {maxSumUsingMethod1}");
+            Console.WriteLine($"Max SubArray Sum is : {maxSumUsingMethod2}");
+        }
 
         private static void MajorityElement()
         {
@@ -73,6 +84,7 @@ namespace AllArrayPrograms
                 Console.WriteLine("13: Two Sum Problem returns the indeces of the given target");
                 Console.WriteLine("14: Sort an array of 0's 1's and 2's");
                 Console.WriteLine("15: Find the Majority Element that occurs more than N/2 times");
+                Console.WriteLine("16: Maximum Sub Array Sum Kadanes Algorithm");
                 Console.WriteLine("-1: Exit");
 
                 if (!int.TryParse(Console.ReadLine(), out int choice))
