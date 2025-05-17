@@ -24,6 +24,7 @@ namespace AllArrayPrograms
 {
     public class Program
     {
+        private const int PageSize = 10;
         private static readonly Dictionary<int, Action> ProgramActions = new Dictionary<int, Action>
         {
             { 0, RunLargestElementProgram },
@@ -50,104 +51,102 @@ namespace AllArrayPrograms
 
         };
 
-        private static void RearrangeArrayElementsBySign()
-        {
-            int[] array = InputArray();
-            //int[] result = RearrangeArrayElementsBySignClass.RearrangeArray(array);
-            //int[] result = RearrangeArrayElementsBySignClass.RearrangeArrayMethod2(array);
-            //int[] result = RearrangeArrayElementsBySignClass.RearrangeArrayMethod3(array);
-            int[] result = RearrangeArrayElementsBySignClass.RearrangeArrayMethod4(array);
-            PrintArray(result, result.Length);
-        }
-
-        private static void BestTimetoBuyandSellStock()
-        {
-            int[] array = InputArray();
-            int maxProfit1 = BestTimetoBuyandSellStockClass.MaxProfitMethod1(array);
-            int maxProfit2 = BestTimetoBuyandSellStockClass.MaxProfitMethod1(array);
-            Console.WriteLine($"Max profit using Method1 is: {maxProfit1}");
-            Console.WriteLine($"Max profit is using Method2 is: {maxProfit2}");
-        }
-
-        private static void MaximumSUbArraySum_KadanesAlgorithm_ReturnSubArray()
-        {
-            int[] array = InputArray();
-            int[] maxSumUsingMethod1 = MaxSubArraySumReturnSubArrayClass.MaxSubArraySumReturnSubArrayMethod1(array);
-            int[] maxSumUsingMethod2 = MaxSubArraySumReturnSubArrayClass.MaxSubArraySumReturnSubArrayMethod1(array);
-            Console.WriteLine("Output using method1");
-            PrintArray(maxSumUsingMethod1, maxSumUsingMethod1.Length);
-            Console.WriteLine("Output using method2");
-            PrintArray(maxSumUsingMethod2, maxSumUsingMethod2.Length);
-        }
-
-        private static void MaximumSUbArraySum_KadanesAlgorithm()
-        {
-            int[] array = InputArray();
-            int maxSumUsingMethod1 = MaxSubArraySumClass.MaxSubArraySumMethod1(array);
-            int maxSumUsingMethod2 = MaxSubArraySumClass.MaxSubArraySumMethod2(array);
-            Console.WriteLine($"Max SubArray Sum is : {maxSumUsingMethod1}");
-            Console.WriteLine($"Max SubArray Sum is : {maxSumUsingMethod2}");
-        }
-
-        private static void MajorityElement()
-        {
-            int[] inpArray = InputArray();
-            int majorityElement1 = MajorityElementClass.FindMajorityElementMethod1(inpArray);
-            int majorityElement2 = MajorityElementClass.FindMajorityElementMethod2(inpArray);
-            int majorityElement3 = MajorityElementClass.FindMajorityElementMethod3(inpArray);
-            Console.WriteLine($"Majority element in given array is {majorityElement1}");
-            Console.WriteLine($"Majority element in given array is {majorityElement2}");
-            Console.WriteLine($"Majority element in given array is {majorityElement3}");
-        }
+       
 
         public static void Main(string[] args)
         {
+            int totalPrograms = ProgramActions.Count;
+            int totalPages = (totalPrograms + PageSize - 1) / PageSize;
+            int currentPage = totalPages - 1;  // Start from last page (0-based index)
+
             while (true)
             {
-                Console.WriteLine("Select a program to run:\n");
-                Console.WriteLine("0 : Largest Element in an array");
-                Console.WriteLine("1 : Second Largest Element in an array");
-                Console.WriteLine("2 : Check if an Array is Sorted");
-                Console.WriteLine("3 : Remove Duplicates in-place from Sorted Array");
-                Console.WriteLine("4 : Left Rotate Array by K Places");
-                Console.WriteLine("5 : Move All K values to the end");
-                Console.WriteLine("6 : Linear Search");
-                Console.WriteLine("7 : Union Of 2 Arrays");
-                Console.WriteLine("8 : Intersection Of 2 Arrays");
-                Console.WriteLine("9 : Find missing element");
-                Console.WriteLine("10: Find Max Consecitive 1s");
-                Console.WriteLine("11: Find Single Number In Array");
-                Console.WriteLine("12: Longest Subarray with given Sum K(Positives)");
-                Console.WriteLine("13: Two Sum Problem returns the indeces of the given target");
-                Console.WriteLine("14: Sort an array of 0's 1's and 2's");
-                Console.WriteLine("15: Find the Majority Element that occurs more than N/2 times");
-                Console.WriteLine("16: Maximum Sub Array Sum Kadanes Algorithm");
-                Console.WriteLine("17: Maximum Sub Array Sum and return sub array");
-                Console.WriteLine("18: Best Time to Buy and Sell Stock");
-                Console.WriteLine("-1: Exit");
+                Console.Clear();
+                Console.WriteLine($"Select a program to run (Page {currentPage + 1} of {totalPages}):\n");
 
-                if (!int.TryParse(Console.ReadLine(), out int choice))
+                // Calculate start and end indices for the current page
+                int startIndex = currentPage * PageSize;
+                int endIndex = Math.Min(startIndex + PageSize, totalPrograms);
+
+                // Display programs for current page
+                for (int i = startIndex; i < endIndex; i++)
                 {
-                    Console.WriteLine("Invalid input. Please enter a number.");
-                    continue;
+                    Console.WriteLine($"{i} : {GetProgramDescription(i)}");
                 }
 
-                if (choice == -1)
+                Console.WriteLine("\nn : Next page, p : Previous page, -1 : Exit");
+                Console.Write("\nEnter choice: ");
+
+                string input = Console.ReadLine();
+
+                if (input == "-1")
                 {
                     Console.WriteLine("Exiting program...");
                     break;
                 }
-
-                if (ProgramActions.TryGetValue(choice, out var action))
+                else if (input == "n")
                 {
-                    action.Invoke();
+                    if (currentPage < totalPages - 1)
+                        currentPage++;
+                    else
+                        Console.WriteLine("Already at last page.");
+                }
+                else if (input == "p")
+                {
+                    if (currentPage > 0)
+                        currentPage--;
+                    else
+                        Console.WriteLine("Already at first page.");
+                }
+                else if (int.TryParse(input, out int choice))
+                {
+                    if (ProgramActions.TryGetValue(choice, out var action))
+                    {
+                        Console.Clear();
+                        action.Invoke();
+
+                        Console.WriteLine("\nPress any key to return to menu...");
+                        Console.ReadKey();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Invalid choice. Please select a valid option.");
+                    }
                 }
                 else
                 {
-                    Console.WriteLine("Invalid choice. Please select a valid option.");
+                    Console.WriteLine("Invalid input. Please try again.");
                 }
             }
 
+        }
+        private static string GetProgramDescription(int index)
+        {
+            // You can hardcode or map descriptions here
+            return index switch
+            {
+                0 => "Largest Element in an array",
+                1 => "Second Largest Element in an array",
+                2 => "Check if an Array is Sorted",
+                3 => "Remove Duplicates in-place from Sorted Array",
+                4 => "Left Rotate Array by K Places",
+                5 => "Move All K values to the end",
+                6 => "Linear Search",
+                7 => "Union Of 2 Arrays",
+                8 => "Intersection Of 2 Arrays",
+                9 => "Find missing element",
+                10 => "Find Max Consecutive 1s",
+                11 => "Find Single Number In Array",
+                12 => "Longest Subarray with given Sum K(Positives)",
+                13 => "Two Sum Problem returns the indices of the given target",
+                14 => "Sort an array of 0's 1's and 2's",
+                15 => "Find the Majority Element that occurs more than N/2 times",
+                16 => "Maximum Sub Array Sum Kadane's Algorithm",
+                17 => "Maximum Sub Array Sum and return sub array",
+                18 => "Best Time to Buy and Sell Stock",
+                19 => "Rearrange Array Elements by Sign",
+                _ => "Unknown Program"
+            };
         }
         private static int[] InputArray()
         {
@@ -319,6 +318,54 @@ namespace AllArrayPrograms
             int singleNumber = Solution.SingleNumberMethod2(inpArray);
             Console.WriteLine($"Single number in the give array is : {singleNumber}");
         }
+        private static void RearrangeArrayElementsBySign()
+        {
+            int[] array = InputArray();
+            //int[] result = RearrangeArrayElementsBySignClass.RearrangeArray(array);
+            //int[] result = RearrangeArrayElementsBySignClass.RearrangeArrayMethod2(array);
+            //int[] result = RearrangeArrayElementsBySignClass.RearrangeArrayMethod3(array);
+            int[] result = RearrangeArrayElementsBySignClass.RearrangeArrayMethod4(array);
+            PrintArray(result, result.Length);
+        }
 
+        private static void BestTimetoBuyandSellStock()
+        {
+            int[] array = InputArray();
+            int maxProfit1 = BestTimetoBuyandSellStockClass.MaxProfitMethod1(array);
+            int maxProfit2 = BestTimetoBuyandSellStockClass.MaxProfitMethod1(array);
+            Console.WriteLine($"Max profit using Method1 is: {maxProfit1}");
+            Console.WriteLine($"Max profit is using Method2 is: {maxProfit2}");
+        }
+
+        private static void MaximumSUbArraySum_KadanesAlgorithm_ReturnSubArray()
+        {
+            int[] array = InputArray();
+            int[] maxSumUsingMethod1 = MaxSubArraySumReturnSubArrayClass.MaxSubArraySumReturnSubArrayMethod1(array);
+            int[] maxSumUsingMethod2 = MaxSubArraySumReturnSubArrayClass.MaxSubArraySumReturnSubArrayMethod1(array);
+            Console.WriteLine("Output using method1");
+            PrintArray(maxSumUsingMethod1, maxSumUsingMethod1.Length);
+            Console.WriteLine("Output using method2");
+            PrintArray(maxSumUsingMethod2, maxSumUsingMethod2.Length);
+        }
+
+        private static void MaximumSUbArraySum_KadanesAlgorithm()
+        {
+            int[] array = InputArray();
+            int maxSumUsingMethod1 = MaxSubArraySumClass.MaxSubArraySumMethod1(array);
+            int maxSumUsingMethod2 = MaxSubArraySumClass.MaxSubArraySumMethod2(array);
+            Console.WriteLine($"Max SubArray Sum is : {maxSumUsingMethod1}");
+            Console.WriteLine($"Max SubArray Sum is : {maxSumUsingMethod2}");
+        }
+
+        private static void MajorityElement()
+        {
+            int[] inpArray = InputArray();
+            int majorityElement1 = MajorityElementClass.FindMajorityElementMethod1(inpArray);
+            int majorityElement2 = MajorityElementClass.FindMajorityElementMethod2(inpArray);
+            int majorityElement3 = MajorityElementClass.FindMajorityElementMethod3(inpArray);
+            Console.WriteLine($"Majority element in given array is {majorityElement1}");
+            Console.WriteLine($"Majority element in given array is {majorityElement2}");
+            Console.WriteLine($"Majority element in given array is {majorityElement3}");
+        }
     }
 }
