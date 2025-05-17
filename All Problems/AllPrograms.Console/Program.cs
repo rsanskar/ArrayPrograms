@@ -19,6 +19,8 @@ using MaxSubArraySumReturnSubArray;
 using BestTimetoBuyandSellStock;
 using System.Xml.Linq;
 using RearrangeArrayElementsBySign;
+using LeaderElementsInArray;
+using LongestConsecutiveSequence;
 
 namespace AllArrayPrograms
 {
@@ -46,10 +48,33 @@ namespace AllArrayPrograms
             { 16, MaximumSUbArraySum_KadanesAlgorithm },
             { 17, MaximumSUbArraySum_KadanesAlgorithm_ReturnSubArray },
             { 18, BestTimetoBuyandSellStock },
-            { 19, RearrangeArrayElementsBySign }
+            { 19, RearrangeArrayElementsBySign },
+            { 20, LeaderElementsInArray },
+            { 21, LongestConsecutiveSequence },
 
 
-        };       
+        };
+
+        private static void LongestConsecutiveSequence()
+        {
+            int[] inpArray = InputArray();
+            int maxEle = LongestConsecutiveSequenceInArray.FindLongestConsecutiveSequenceInArray(inpArray);
+            int maxEle2 = LongestConsecutiveSequenceInArray.FindLongestConsecutiveSequenceInArrayMethod1(inpArray);
+            int maxEle3 = LongestConsecutiveSequenceInArray.FindLongestConsecutiveSequenceInArrayMethod2(inpArray);
+            int maxEle4 = LongestConsecutiveSequenceInArray.FindLongestConsecutiveSequenceInArrayMethod2(inpArray);
+            Console.WriteLine($"Longest Consecutive Sequence In Array is Using Method1: {maxEle}");
+            Console.WriteLine($"Longest Consecutive Sequence In Array is Using Method2: {maxEle2}");
+            Console.WriteLine($"Longest Consecutive Sequence In Array is Using Method3: {maxEle3}");
+            Console.WriteLine($"Longest Consecutive Sequence In Array is Using Method3: {maxEle4}");
+        }
+
+        private static void LeaderElementsInArray()
+        {
+            int[] inpArray = InputArray();
+            //int[] result = LeaderElements.FindLeaderElements(inpArray);
+            int[] result = LeaderElements.FindLeaderElementsMethod2(inpArray);
+            PrintArray(result,result.Length);
+        }
 
         private static string GetProgramDescription(int index)
         {
@@ -76,6 +101,8 @@ namespace AllArrayPrograms
                 17 => "Maximum Sub Array Sum and return sub array",
                 18 => "Best Time to Buy and Sell Stock",
                 19 => "Rearrange Array Elements by Sign",
+                20 => "Leader Elements in array",
+                21 => "Longest Consecutive Sequence In Array",
                 _ => "Unknow Program"//Default Program
             };
         }
