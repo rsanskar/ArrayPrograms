@@ -17,6 +17,8 @@ using MajorityElement;
 using MaxSubArraySum;
 using MaxSubArraySumReturnSubArray;
 using BestTimetoBuyandSellStock;
+using System.Xml.Linq;
+using RearrangeArrayElementsBySign;
 
 namespace AllArrayPrograms
 {
@@ -42,10 +44,21 @@ namespace AllArrayPrograms
             { 15, MajorityElement },
             { 16, MaximumSUbArraySum_KadanesAlgorithm },
             { 17, MaximumSUbArraySum_KadanesAlgorithm_ReturnSubArray },
-            { 18, BestTimetoBuyandSellStock }
+            { 18, BestTimetoBuyandSellStock },
+            { 19, RearrangeArrayElementsBySign }
 
 
         };
+
+        private static void RearrangeArrayElementsBySign()
+        {
+            int[] array = InputArray();
+            //int[] result = RearrangeArrayElementsBySignClass.RearrangeArray(array);
+            //int[] result = RearrangeArrayElementsBySignClass.RearrangeArrayMethod2(array);
+            //int[] result = RearrangeArrayElementsBySignClass.RearrangeArrayMethod3(array);
+            int[] result = RearrangeArrayElementsBySignClass.RearrangeArrayMethod4(array);
+            PrintArray(result, result.Length);
+        }
 
         private static void BestTimetoBuyandSellStock()
         {

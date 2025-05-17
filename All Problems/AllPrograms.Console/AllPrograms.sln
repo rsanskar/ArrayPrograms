@@ -47,6 +47,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxSubArraySumReturnSubArra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BestTimetoBuyandSellStock", "..\AllPrograms.Logic\BestTimetoBuyandSellStock\BestTimetoBuyandSellStock.csproj", "{1EA57F40-7947-4B13-A5D0-5B631B8D9F19}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RearrangeArrayElementsBySign", "..\AllPrograms.Logic\RearrangeArrayElementsBySign\RearrangeArrayElementsBySign.csproj", "{ADC5C8ED-F250-4152-9E98-E4977B2CDB7A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -133,6 +135,10 @@ Global
 		{1EA57F40-7947-4B13-A5D0-5B631B8D9F19}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1EA57F40-7947-4B13-A5D0-5B631B8D9F19}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1EA57F40-7947-4B13-A5D0-5B631B8D9F19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADC5C8ED-F250-4152-9E98-E4977B2CDB7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADC5C8ED-F250-4152-9E98-E4977B2CDB7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADC5C8ED-F250-4152-9E98-E4977B2CDB7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADC5C8ED-F250-4152-9E98-E4977B2CDB7A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -158,6 +164,7 @@ Global
 		{6EF23C89-E124-4487-A903-597E08575026} = {C56CC963-007E-430D-B094-07ACDF563E34}
 		{12794892-CA51-4BFB-A4CA-A861133AE92A} = {C56CC963-007E-430D-B094-07ACDF563E34}
 		{1EA57F40-7947-4B13-A5D0-5B631B8D9F19} = {C56CC963-007E-430D-B094-07ACDF563E34}
+		{ADC5C8ED-F250-4152-9E98-E4977B2CDB7A} = {C56CC963-007E-430D-B094-07ACDF563E34}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {144249E9-F917-4866-A1B1-89E38358BE18}
