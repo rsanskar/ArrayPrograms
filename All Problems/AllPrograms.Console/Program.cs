@@ -49,11 +49,41 @@ namespace AllArrayPrograms
             { 19, RearrangeArrayElementsBySign }
 
 
-        };
+        };       
 
-       
-
+        private static string GetProgramDescription(int index)
+        {
+            // You can hardcode or map descriptions here
+            return index switch
+            {
+                0 => "Largest Element in an array",
+                1 => "Second Largest Element in an array",
+                2 => "Check if an Array is Sorted",
+                3 => "Remove Duplicates in-place from Sorted Array",
+                4 => "Left Rotate Array by K Places",
+                5 => "Move All K values to the end",
+                6 => "Linear Search",
+                7 => "Union Of 2 Arrays",
+                8 => "Intersection Of 2 Arrays",
+                9 => "Find missing element",
+                10 => "Find Max Consecutive 1s",
+                11 => "Find Single Number In Array",
+                12 => "Longest Subarray with given Sum K(Positives)",
+                13 => "Two Sum Problem returns the indices of the given target",
+                14 => "Sort an array of 0's 1's and 2's",
+                15 => "Find the Majority Element that occurs more than N/2 times",
+                16 => "Maximum Sub Array Sum Kadane's Algorithm",
+                17 => "Maximum Sub Array Sum and return sub array",
+                18 => "Best Time to Buy and Sell Stock",
+                19 => "Rearrange Array Elements by Sign",
+                _ => "Unknow Program"//Default Program
+            };
+        }
         public static void Main(string[] args)
+        {
+            DisaplayPrograms();
+        }
+        private static void DisaplayPrograms()
         {
             int totalPrograms = ProgramActions.Count;
             int totalPages = (totalPrograms + PageSize - 1) / PageSize;
@@ -77,7 +107,7 @@ namespace AllArrayPrograms
                 Console.WriteLine("\nn : Next page, p : Previous page, -1 : Exit");
                 Console.Write("\nEnter choice: ");
 
-                string input = Console.ReadLine();
+                string? input = Console.ReadLine();
 
                 if (input == "-1")
                 {
@@ -118,35 +148,6 @@ namespace AllArrayPrograms
                     Console.WriteLine("Invalid input. Please try again.");
                 }
             }
-
-        }
-        private static string GetProgramDescription(int index)
-        {
-            // You can hardcode or map descriptions here
-            return index switch
-            {
-                0 => "Largest Element in an array",
-                1 => "Second Largest Element in an array",
-                2 => "Check if an Array is Sorted",
-                3 => "Remove Duplicates in-place from Sorted Array",
-                4 => "Left Rotate Array by K Places",
-                5 => "Move All K values to the end",
-                6 => "Linear Search",
-                7 => "Union Of 2 Arrays",
-                8 => "Intersection Of 2 Arrays",
-                9 => "Find missing element",
-                10 => "Find Max Consecutive 1s",
-                11 => "Find Single Number In Array",
-                12 => "Longest Subarray with given Sum K(Positives)",
-                13 => "Two Sum Problem returns the indices of the given target",
-                14 => "Sort an array of 0's 1's and 2's",
-                15 => "Find the Majority Element that occurs more than N/2 times",
-                16 => "Maximum Sub Array Sum Kadane's Algorithm",
-                17 => "Maximum Sub Array Sum and return sub array",
-                18 => "Best Time to Buy and Sell Stock",
-                19 => "Rearrange Array Elements by Sign",
-                _ => "Unknown Program"
-            };
         }
         private static int[] InputArray()
         {
@@ -276,7 +277,6 @@ namespace AllArrayPrograms
             int missingElement = FindMissingElement.FindMethod3(inpArray);
             Console.WriteLine($"Missing Element in an array is : {missingElement}");
         }
-
         private static void Sort0s1sAnd2s()
         {
             Console.WriteLine("Enter the 0's 1's and 2's in an array");
@@ -287,7 +287,6 @@ namespace AllArrayPrograms
             PrintArray(inpArray, inpArray.Length);
 
         }
-
         private static void TwoSumWithTarget()
         {
             int[] inpArray = InputArray();
@@ -298,7 +297,6 @@ namespace AllArrayPrograms
             Console.WriteLine($"indices are {result[0]} {result[1]}");
 
         }
-
         private static void LongestSubArrayWithSumK()
         {
             int[] inpArray = InputArray();
@@ -310,7 +308,6 @@ namespace AllArrayPrograms
             Console.WriteLine($"length of longest sub array with given sum {K} is : {lsaLength} \n");
 
         }
-
         private static void SingleNumberInArray()
         {
             int[] inpArray = InputArray();
@@ -327,7 +324,6 @@ namespace AllArrayPrograms
             int[] result = RearrangeArrayElementsBySignClass.RearrangeArrayMethod4(array);
             PrintArray(result, result.Length);
         }
-
         private static void BestTimetoBuyandSellStock()
         {
             int[] array = InputArray();
@@ -336,7 +332,6 @@ namespace AllArrayPrograms
             Console.WriteLine($"Max profit using Method1 is: {maxProfit1}");
             Console.WriteLine($"Max profit is using Method2 is: {maxProfit2}");
         }
-
         private static void MaximumSUbArraySum_KadanesAlgorithm_ReturnSubArray()
         {
             int[] array = InputArray();
@@ -347,7 +342,6 @@ namespace AllArrayPrograms
             Console.WriteLine("Output using method2");
             PrintArray(maxSumUsingMethod2, maxSumUsingMethod2.Length);
         }
-
         private static void MaximumSUbArraySum_KadanesAlgorithm()
         {
             int[] array = InputArray();
@@ -356,7 +350,6 @@ namespace AllArrayPrograms
             Console.WriteLine($"Max SubArray Sum is : {maxSumUsingMethod1}");
             Console.WriteLine($"Max SubArray Sum is : {maxSumUsingMethod2}");
         }
-
         private static void MajorityElement()
         {
             int[] inpArray = InputArray();
