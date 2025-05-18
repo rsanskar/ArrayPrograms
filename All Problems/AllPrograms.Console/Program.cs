@@ -21,6 +21,8 @@ using System.Xml.Linq;
 using RearrangeArrayElementsBySign;
 using LeaderElementsInArray;
 using LongestConsecutiveSequence;
+using System.Collections.Generic;
+using SetMatrixZeroes;
 
 namespace AllArrayPrograms
 {
@@ -51,9 +53,22 @@ namespace AllArrayPrograms
             { 19, RearrangeArrayElementsBySign },
             { 20, LeaderElementsInArray },
             { 21, LongestConsecutiveSequence },
+            { 22, SetMatrixZeroes },
 
 
         };
+
+        private static void SetMatrixZeroes()
+        {
+            int[][] array =
+            {
+                new int[] { 0, 1, 2, 0 },
+                new int[] { 3, 4, 5, 2 },
+                new int[] { 1, 3, 1, 5 }
+            };
+            SetMatrixWithZeroes.SetZeroes(array);
+            //SetMatrixWithZeroes.SetZerosMethod1(array);
+        }
 
         private static void LongestConsecutiveSequence()
         {
@@ -73,7 +88,7 @@ namespace AllArrayPrograms
             int[] inpArray = InputArray();
             //int[] result = LeaderElements.FindLeaderElements(inpArray);
             int[] result = LeaderElements.FindLeaderElementsMethod2(inpArray);
-            PrintArray(result,result.Length);
+            PrintArray(result, result.Length);
         }
 
         private static string GetProgramDescription(int index)
