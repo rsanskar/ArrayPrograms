@@ -41,57 +41,104 @@
             }
         }
 
-        //public static void SetZerosMethod1(int[][] matrix)           //Not Giving Correct output
-        //{
-        //    int rowCount = matrix.Length;
-        //    int colCount = 0;
+        public static void SetZerosMethod1(int[][] matrix)           //Better solution
+        {
+            int[] colArray = new int[matrix[0].Length];
+            int[] rowArray = new int[matrix.Length];
+            for (int i = 0; i < matrix.Length; i++)
+            {
+                for (int j = 0; j < matrix[i].Length; j++)
+                {
+                    if (matrix[i][j] == 0)
+                    {
+                        colArray[j] = 1;
+                        rowArray[i] = 1;
+                    }
+                }
+            }
+            for (int i = 0; i < matrix.Length; i++)
+            {
+                for (int j = 0; j < matrix[i].Length; j++)
+                {
+                    if (colArray[j] == 1 || rowArray[i] == 1)
+                    {
+                        matrix[i][j] = 0;
+                    }
+                }
+            }
+            //Printing matrix
+            for (int i = 0; i < matrix.Length; i++)
+            {
+                for (int j = 0; j < matrix[i].Length; j++)
+                {
+                    Console.Write(matrix[i][j]);
+                }
+                Console.WriteLine();
+            }
 
-        //    // Find the max column length (since it's a jagged array)
-        //    foreach (var newrow in matrix)
-        //    {
-        //        if (newrow.Length > colCount)
-        //            colCount = newrow.Length;
-        //    }
 
-        //    int[] row = new int[rowCount];
-        //    int[] col = new int[colCount];
-        //    for (int rows = 0; rows < matrix.Length; rows++)
-        //    {
-        //        for (int cols = 0; cols < matrix[rows].Length; cols++)
-        //        {
-        //            if (matrix[rows][cols] == 0)
-        //            {
-        //                row[rows] = 1;
-        //                col[cols] = 1;
-        //            }
-        //        }
-        //    }
-        //    // Second pass: Set rows to zero based on markers
-        //    for (int rows = 0; rows < rowCount; rows++)
-        //    {
-        //        if (row[rows] == 1)
-        //        {
-        //            for (int cols = 0; cols < matrix[rows].Length; cols++)
-        //            {
-        //                matrix[rows][cols] = 0;
-        //            }
-        //        }
-        //    }
 
-        //    // Second pass: Set columns to zero based on markers
-        //    for (int cols = 0; cols < colCount; cols++)
-        //    {
-        //        if (col[cols] == 1)
-        //        {
-        //            for (int rows = 0; rows < rowCount; rows++)
-        //            {
-        //                if (cols < matrix[rows].Length) // Only zero out if column exists in the row
-        //                {
-        //                    matrix[rows][cols] = 0;
-        //                }
-        //            }
-        //        }
-        //    }
-        //}
+        }
+
+        public static void SetZerosMethod2(int[][] matrix)
+        {
+            int n = matrix.Length;
+            int m = matrix[0].Length;
+            //int[] colArray = new int[matrix[0].Length]; -->matrix[0][..]
+            //int[] rowArray = new int[matrix.Length];    -->matrix[..][0]
+            int col0 = 1;
+            for (int i = 0; i < matrix.Length; i++)
+            {
+                for (int j = 0; j < matrix[i].Length; j++)
+                {
+                    if (matrix[i][j] == 0)
+                    {
+                        // mark the i th row
+                        matrix[0][j] = 0;
+                        // mark the i th row
+                        if (j != 0)
+                        {
+                            matrix[i][0] = 0;
+                        }
+                        else
+                        {
+                            col0 = 0;
+                        }
+                    }
+                }
+            }
+            for(int i  = 1; i < n; i++)
+            {
+                for(int j = 1;j < m; j++)
+                {
+                    if((matrix[i][0] == 0 || matrix[0][j] == 0)){
+                        matrix[i][j] = 0;
+                    }
+                }
+            }
+            if (matrix[0][0] == 0)
+            {
+                for(int j = 0; j < m; j++)
+                {
+                    matrix[0][j] = 0;
+                }
+            }
+            if (col0 == 0)
+            {
+                for (int i = 0; i < n; i++)
+                {
+                    matrix[i][0] = 0;
+                }
+            }
+            //Printing matrix
+            for (int i = 0; i < matrix.Length; i++)
+            {
+                for (int j = 0; j < matrix[i].Length; j++)
+                {
+                    Console.Write(matrix[i][j]);
+                }
+                Console.WriteLine();
+            }
+        }
     }
 }

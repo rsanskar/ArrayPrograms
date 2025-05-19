@@ -62,12 +62,13 @@ namespace AllArrayPrograms
         {
             int[][] array =
             {
-                new int[] { 0, 1, 2, 0 },
-                new int[] { 3, 4, 5, 2 },
-                new int[] { 1, 3, 1, 5 }
+                new int[] { 0, 2, 3 },
+                new int[] { 6, 1, 6 },
+                new int[] { 7, 8, 9 }
             };
-            SetMatrixWithZeroes.SetZeroes(array);
+            //SetMatrixWithZeroes.SetZeroes(array);
             //SetMatrixWithZeroes.SetZerosMethod1(array);
+            SetMatrixWithZeroes.SetZerosMethod2(array);
         }
 
         private static void LongestConsecutiveSequence()
