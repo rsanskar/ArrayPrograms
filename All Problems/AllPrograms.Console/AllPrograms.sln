@@ -39,21 +39,25 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TwoSumProblem", "..\AllProg
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SortColorsProblem", "..\AllPrograms.Logic\SortColorsProblem\SortColorsProblem.csproj", "{51CB32DA-9E93-4767-9A2B-E6D291F1381C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MajorityElement", "..\AllPrograms.Logic\MajorityElement\MajorityElement.csproj", "{AF261785-43BD-4E30-B975-4C7600499122}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MajorityElement", "..\AllPrograms.Logic\MajorityElement\MajorityElement.csproj", "{AF261785-43BD-4E30-B975-4C7600499122}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxSubArraySum", "..\AllPrograms.Logic\MaxSubArraySum\MaxSubArraySum.csproj", "{6EF23C89-E124-4487-A903-597E08575026}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaxSubArraySum", "..\AllPrograms.Logic\MaxSubArraySum\MaxSubArraySum.csproj", "{6EF23C89-E124-4487-A903-597E08575026}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxSubArraySumReturnSubArray", "..\AllPrograms.Logic\MaxSubArraySumReturnSubArray\MaxSubArraySumReturnSubArray.csproj", "{12794892-CA51-4BFB-A4CA-A861133AE92A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaxSubArraySumReturnSubArray", "..\AllPrograms.Logic\MaxSubArraySumReturnSubArray\MaxSubArraySumReturnSubArray.csproj", "{12794892-CA51-4BFB-A4CA-A861133AE92A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BestTimetoBuyandSellStock", "..\AllPrograms.Logic\BestTimetoBuyandSellStock\BestTimetoBuyandSellStock.csproj", "{1EA57F40-7947-4B13-A5D0-5B631B8D9F19}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BestTimetoBuyandSellStock", "..\AllPrograms.Logic\BestTimetoBuyandSellStock\BestTimetoBuyandSellStock.csproj", "{1EA57F40-7947-4B13-A5D0-5B631B8D9F19}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RearrangeArrayElementsBySign", "..\AllPrograms.Logic\RearrangeArrayElementsBySign\RearrangeArrayElementsBySign.csproj", "{ADC5C8ED-F250-4152-9E98-E4977B2CDB7A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RearrangeArrayElementsBySign", "..\AllPrograms.Logic\RearrangeArrayElementsBySign\RearrangeArrayElementsBySign.csproj", "{ADC5C8ED-F250-4152-9E98-E4977B2CDB7A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaderElementsInArray", "..\AllPrograms.Logic\LeaderElementsInArray\LeaderElementsInArray.csproj", "{1D3D2F5B-1F95-42D8-AB2A-F5725A9FF7BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LeaderElementsInArray", "..\AllPrograms.Logic\LeaderElementsInArray\LeaderElementsInArray.csproj", "{1D3D2F5B-1F95-42D8-AB2A-F5725A9FF7BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LongestConsecutiveSequence", "..\AllPrograms.Logic\LongestConsecutiveSequence\LongestConsecutiveSequence.csproj", "{1CD446D3-49B7-4F4C-9A70-5E56861FB105}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LongestConsecutiveSequence", "..\AllPrograms.Logic\LongestConsecutiveSequence\LongestConsecutiveSequence.csproj", "{1CD446D3-49B7-4F4C-9A70-5E56861FB105}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SetMatrixZeroes", "..\AllPrograms.Logic\SetMatrixZeroes\SetMatrixZeroes.csproj", "{16783C44-7202-4D95-B074-7176EF434EE3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SetMatrixZeroes", "..\AllPrograms.Logic\SetMatrixZeroes\SetMatrixZeroes.csproj", "{16783C44-7202-4D95-B074-7176EF434EE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rotate90DegreeClockWise", "..\AllPrograms.Logic\Rotate90DegreeClockWise\Rotate90DegreeClockWise.csproj", "{86C157B2-A8BF-403F-95B6-873822AA9015}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rotate90DegreeAntiClockWise", "..\AllPrograms.Logic\Rotate90DegreeAntiClockWise\Rotate90DegreeAntiClockWise.csproj", "{7B3C82DF-B235-4E9A-90B4-EED9C153C8AB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -157,6 +161,14 @@ Global
 		{16783C44-7202-4D95-B074-7176EF434EE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16783C44-7202-4D95-B074-7176EF434EE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16783C44-7202-4D95-B074-7176EF434EE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86C157B2-A8BF-403F-95B6-873822AA9015}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86C157B2-A8BF-403F-95B6-873822AA9015}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86C157B2-A8BF-403F-95B6-873822AA9015}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86C157B2-A8BF-403F-95B6-873822AA9015}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B3C82DF-B235-4E9A-90B4-EED9C153C8AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B3C82DF-B235-4E9A-90B4-EED9C153C8AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B3C82DF-B235-4E9A-90B4-EED9C153C8AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B3C82DF-B235-4E9A-90B4-EED9C153C8AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -186,6 +198,7 @@ Global
 		{1D3D2F5B-1F95-42D8-AB2A-F5725A9FF7BD} = {C56CC963-007E-430D-B094-07ACDF563E34}
 		{1CD446D3-49B7-4F4C-9A70-5E56861FB105} = {C56CC963-007E-430D-B094-07ACDF563E34}
 		{16783C44-7202-4D95-B074-7176EF434EE3} = {C56CC963-007E-430D-B094-07ACDF563E34}
+		{86C157B2-A8BF-403F-95B6-873822AA9015} = {C56CC963-007E-430D-B094-07ACDF563E34}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {144249E9-F917-4866-A1B1-89E38358BE18}

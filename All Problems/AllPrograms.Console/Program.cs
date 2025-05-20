@@ -23,6 +23,8 @@ using LeaderElementsInArray;
 using LongestConsecutiveSequence;
 using System.Collections.Generic;
 using SetMatrixZeroes;
+using Rotate90DegreeClockWise;
+using Rotate90DegreeAntiClockWise;
 
 namespace AllArrayPrograms
 {
@@ -54,9 +56,35 @@ namespace AllArrayPrograms
             { 20, LeaderElementsInArray },
             { 21, LongestConsecutiveSequence },
             { 22, SetMatrixZeroes },
-
+            { 23, Rotate90DegreeClockWise},
+            { 24, Rotate90DegreeAntiClockWise},
 
         };
+
+        private static void Rotate90DegreeAntiClockWise()
+        {
+            int[][] array =
+            {
+                new int[] { 1, 2, 3 },
+                new int[] { 4, 5, 6 },
+                new int[] { 7, 8, 9 }
+            };
+            Rotate90DegreeAntiClockWiseClass.RotateArray(array);
+            Rotate90DegreeAntiClockWiseClass.RotateArray(array);
+        }
+
+        private static void Rotate90DegreeClockWise()
+        {
+            int[][] array =
+            {
+                new int[] { 1, 2, 3,4 },
+                new int[] { 5, 6, 7,8 },
+                new int[] { 9, 10, 11,12 },
+                new int[] { 13, 14, 15, 16 }
+            };
+            Rotate90DegreeClockWiseClass.RotateArray(array);
+            Rotate90DegreeClockWiseClass.RotateArrayMethod2(array);
+        }
 
         private static void SetMatrixZeroes()
         {
@@ -119,6 +147,10 @@ namespace AllArrayPrograms
                 19 => "Rearrange Array Elements by Sign",
                 20 => "Leader Elements in array",
                 21 => "Longest Consecutive Sequence In Array",
+                22 => "Set Matrix Zero",
+                23 => "Rotate Image by 90 degree(Clock wise)",
+                24 => "Rotate Image by 90 degree(Anti Clock wise)",
+                25 => "Spiral Traversal of Matrix",
                 _ => "Unknow Program"//Default Program
             };
         }
