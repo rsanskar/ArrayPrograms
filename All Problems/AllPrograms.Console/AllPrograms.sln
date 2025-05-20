@@ -59,6 +59,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rotate90DegreeClockWise", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rotate90DegreeAntiClockWise", "..\AllPrograms.Logic\Rotate90DegreeAntiClockWise\Rotate90DegreeAntiClockWise.csproj", "{7B3C82DF-B235-4E9A-90B4-EED9C153C8AB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpiralTraversalofMatrix", "..\AllPrograms.Logic\SpiralTraversalofMatrix\SpiralTraversalofMatrix.csproj", "{968F2332-D96A-438C-8577-01128942EE92}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -169,6 +171,10 @@ Global
 		{7B3C82DF-B235-4E9A-90B4-EED9C153C8AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B3C82DF-B235-4E9A-90B4-EED9C153C8AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B3C82DF-B235-4E9A-90B4-EED9C153C8AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{968F2332-D96A-438C-8577-01128942EE92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{968F2332-D96A-438C-8577-01128942EE92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{968F2332-D96A-438C-8577-01128942EE92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{968F2332-D96A-438C-8577-01128942EE92}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -199,6 +205,8 @@ Global
 		{1CD446D3-49B7-4F4C-9A70-5E56861FB105} = {C56CC963-007E-430D-B094-07ACDF563E34}
 		{16783C44-7202-4D95-B074-7176EF434EE3} = {C56CC963-007E-430D-B094-07ACDF563E34}
 		{86C157B2-A8BF-403F-95B6-873822AA9015} = {C56CC963-007E-430D-B094-07ACDF563E34}
+		{7B3C82DF-B235-4E9A-90B4-EED9C153C8AB} = {C56CC963-007E-430D-B094-07ACDF563E34}
+		{968F2332-D96A-438C-8577-01128942EE92} = {C56CC963-007E-430D-B094-07ACDF563E34}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {144249E9-F917-4866-A1B1-89E38358BE18}

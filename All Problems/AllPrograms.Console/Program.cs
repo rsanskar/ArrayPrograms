@@ -25,6 +25,7 @@ using System.Collections.Generic;
 using SetMatrixZeroes;
 using Rotate90DegreeClockWise;
 using Rotate90DegreeAntiClockWise;
+using SpiralTraversalofMatrix;
 
 namespace AllArrayPrograms
 {
@@ -58,68 +59,9 @@ namespace AllArrayPrograms
             { 22, SetMatrixZeroes },
             { 23, Rotate90DegreeClockWise},
             { 24, Rotate90DegreeAntiClockWise},
+            { 25, SpiralTraversalofMatrix},
 
         };
-
-        private static void Rotate90DegreeAntiClockWise()
-        {
-            int[][] array =
-            {
-                new int[] { 1, 2, 3 },
-                new int[] { 4, 5, 6 },
-                new int[] { 7, 8, 9 }
-            };
-            Rotate90DegreeAntiClockWiseClass.RotateArray(array);
-            Rotate90DegreeAntiClockWiseClass.RotateArray(array);
-        }
-
-        private static void Rotate90DegreeClockWise()
-        {
-            int[][] array =
-            {
-                new int[] { 1, 2, 3,4 },
-                new int[] { 5, 6, 7,8 },
-                new int[] { 9, 10, 11,12 },
-                new int[] { 13, 14, 15, 16 }
-            };
-            Rotate90DegreeClockWiseClass.RotateArray(array);
-            Rotate90DegreeClockWiseClass.RotateArrayMethod2(array);
-        }
-
-        private static void SetMatrixZeroes()
-        {
-            int[][] array =
-            {
-                new int[] { 0, 2, 3 },
-                new int[] { 6, 1, 6 },
-                new int[] { 7, 8, 9 }
-            };
-            //SetMatrixWithZeroes.SetZeroes(array);
-            //SetMatrixWithZeroes.SetZerosMethod1(array);
-            SetMatrixWithZeroes.SetZerosMethod2(array);
-        }
-
-        private static void LongestConsecutiveSequence()
-        {
-            int[] inpArray = InputArray();
-            int maxEle = LongestConsecutiveSequenceInArray.FindLongestConsecutiveSequenceInArray(inpArray);
-            int maxEle2 = LongestConsecutiveSequenceInArray.FindLongestConsecutiveSequenceInArrayMethod1(inpArray);
-            int maxEle3 = LongestConsecutiveSequenceInArray.FindLongestConsecutiveSequenceInArrayMethod2(inpArray);
-            int maxEle4 = LongestConsecutiveSequenceInArray.FindLongestConsecutiveSequenceInArrayMethod2(inpArray);
-            Console.WriteLine($"Longest Consecutive Sequence In Array is Using Method1: {maxEle}");
-            Console.WriteLine($"Longest Consecutive Sequence In Array is Using Method2: {maxEle2}");
-            Console.WriteLine($"Longest Consecutive Sequence In Array is Using Method3: {maxEle3}");
-            Console.WriteLine($"Longest Consecutive Sequence In Array is Using Method3: {maxEle4}");
-        }
-
-        private static void LeaderElementsInArray()
-        {
-            int[] inpArray = InputArray();
-            //int[] result = LeaderElements.FindLeaderElements(inpArray);
-            int[] result = LeaderElements.FindLeaderElementsMethod2(inpArray);
-            PrintArray(result, result.Length);
-        }
-
         private static string GetProgramDescription(int index)
         {
             // You can hardcode or map descriptions here
@@ -434,6 +376,70 @@ namespace AllArrayPrograms
             Console.WriteLine($"Majority element in given array is {majorityElement1}");
             Console.WriteLine($"Majority element in given array is {majorityElement2}");
             Console.WriteLine($"Majority element in given array is {majorityElement3}");
+        }
+        private static void SpiralTraversalofMatrix()
+        {
+            int[][] array =
+           {
+                new int[] { 1, 2, 3, 2, 1 },
+                new int[] { 4, 5, 6, 5, 4 },
+                new int[] { 7, 8, 9, 8, 7 }
+            };
+            SpiralTraversalofMatrixClass.PrintSpiralMatrix(array);
+        }
+        private static void Rotate90DegreeAntiClockWise()
+        {
+            int[][] array =
+            {
+                new int[] { 1, 2, 3 },
+                new int[] { 4, 5, 6 },
+                new int[] { 7, 8, 9 }
+            };
+            Rotate90DegreeAntiClockWiseClass.RotateArray(array);
+            Rotate90DegreeAntiClockWiseClass.RotateArray(array);
+        }
+        private static void Rotate90DegreeClockWise()
+        {
+            int[][] array =
+            {
+                new int[] { 1, 2, 3,4 },
+                new int[] { 5, 6, 7,8 },
+                new int[] { 9, 10, 11,12 },
+                new int[] { 13, 14, 15, 16 }
+            };
+            Rotate90DegreeClockWiseClass.RotateArray(array);
+            Rotate90DegreeClockWiseClass.RotateArrayMethod2(array);
+        }
+        private static void SetMatrixZeroes()
+        {
+            int[][] array =
+            {
+                new int[] { 0, 2, 3 },
+                new int[] { 6, 1, 6 },
+                new int[] { 7, 8, 9 }
+            };
+            //SetMatrixWithZeroes.SetZeroes(array);
+            //SetMatrixWithZeroes.SetZerosMethod1(array);
+            SetMatrixWithZeroes.SetZerosMethod2(array);
+        }
+        private static void LongestConsecutiveSequence()
+        {
+            int[] inpArray = InputArray();
+            int maxEle = LongestConsecutiveSequenceInArray.FindLongestConsecutiveSequenceInArray(inpArray);
+            int maxEle2 = LongestConsecutiveSequenceInArray.FindLongestConsecutiveSequenceInArrayMethod1(inpArray);
+            int maxEle3 = LongestConsecutiveSequenceInArray.FindLongestConsecutiveSequenceInArrayMethod2(inpArray);
+            int maxEle4 = LongestConsecutiveSequenceInArray.FindLongestConsecutiveSequenceInArrayMethod2(inpArray);
+            Console.WriteLine($"Longest Consecutive Sequence In Array is Using Method1: {maxEle}");
+            Console.WriteLine($"Longest Consecutive Sequence In Array is Using Method2: {maxEle2}");
+            Console.WriteLine($"Longest Consecutive Sequence In Array is Using Method3: {maxEle3}");
+            Console.WriteLine($"Longest Consecutive Sequence In Array is Using Method3: {maxEle4}");
+        }
+        private static void LeaderElementsInArray()
+        {
+            int[] inpArray = InputArray();
+            //int[] result = LeaderElements.FindLeaderElements(inpArray);
+            int[] result = LeaderElements.FindLeaderElementsMethod2(inpArray);
+            PrintArray(result, result.Length);
         }
     }
 }
