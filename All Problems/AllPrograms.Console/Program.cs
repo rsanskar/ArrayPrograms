@@ -26,6 +26,8 @@ using SetMatrixZeroes;
 using Rotate90DegreeClockWise;
 using Rotate90DegreeAntiClockWise;
 using SpiralTraversalofMatrix;
+using CountSubArrayWithGivenSum;
+using MajorityElementNby3;
 
 namespace AllArrayPrograms
 {
@@ -60,8 +62,33 @@ namespace AllArrayPrograms
             { 23, Rotate90DegreeClockWise},
             { 24, Rotate90DegreeAntiClockWise},
             { 25, SpiralTraversalofMatrix},
+            { 26, CountSubArrayWithGivenSum},
+            { 27, MajorityElementNby3},
 
         };
+
+        private static void MajorityElementNby3()
+        {
+            int[] inpArray = InputArray();
+            //IList<int> list = MajorityElementNby3Class.MajorityElement(inpArray);
+            IList<int> list = MajorityElementNby3Class.MajorityElementMethod1(inpArray);
+            foreach (int num in list)
+            {
+                Console.Write(num+" ");
+            }
+        }
+
+        private static void CountSubArrayWithGivenSum()
+        {
+            int[] array = InputArray();
+            Console.WriteLine("Please enter sub array sum to count no of sub arrays");
+            int.TryParse(Console.ReadLine(), out int k);
+            int subArrayCount = CountSubArrayWithGivenSumClass.CountSubArraysCount(array, k);
+            int subArrayCount2 = CountSubArrayWithGivenSumClass.CountSubArraysCountMethod2(array, k);
+            Console.WriteLine($"Number of sub arrays with given sum using Method1 is {subArrayCount}");
+            Console.WriteLine($"Number of sub arrays with given sum using Method2 is {subArrayCount2}");
+        }
+
         private static string GetProgramDescription(int index)
         {
             // You can hardcode or map descriptions here
@@ -93,6 +120,7 @@ namespace AllArrayPrograms
                 23 => "Rotate Image by 90 degree(Clock wise)",
                 24 => "Rotate Image by 90 degree(Anti Clock wise)",
                 25 => "Spiral Traversal of Matrix",
+                26 => "Count subarrays with given sum",
                 _ => "Unknow Program"//Default Program
             };
         }
