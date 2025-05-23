@@ -28,6 +28,7 @@ using Rotate90DegreeAntiClockWise;
 using SpiralTraversalofMatrix;
 using CountSubArrayWithGivenSum;
 using MajorityElementNby3;
+using _3SumProblem;
 
 namespace AllArrayPrograms
 {
@@ -64,8 +65,21 @@ namespace AllArrayPrograms
             { 25, SpiralTraversalofMatrix},
             { 26, CountSubArrayWithGivenSum},
             { 27, MajorityElementNby3},
+            { 28, ThreeSumProblem},
 
         };
+
+        private static void ThreeSumProblem()
+        {
+            int[] inpArray = InputArray();
+            //var triplets = ThreeSumClass.FindTripletsMethod1(inpArray);
+            //var triplets = ThreeSumClass.FindTripletsMethod2(inpArray);
+            var triplets = ThreeSumClass.FindTripletsMethod3(inpArray);
+            foreach (var innerList in triplets)
+            {
+                Console.WriteLine(string.Join(", ", innerList));
+            }
+        }
 
         private static void MajorityElementNby3()
         {
@@ -121,6 +135,8 @@ namespace AllArrayPrograms
                 24 => "Rotate Image by 90 degree(Anti Clock wise)",
                 25 => "Spiral Traversal of Matrix",
                 26 => "Count subarrays with given sum",
+                27 => "Majority element more than N/3 times",
+                28 => "Three Sum Problem (Find Triplets)",
                 _ => "Unknow Program"//Default Program
             };
         }
