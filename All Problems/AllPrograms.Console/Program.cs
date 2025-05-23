@@ -29,6 +29,7 @@ using SpiralTraversalofMatrix;
 using CountSubArrayWithGivenSum;
 using MajorityElementNby3;
 using _3SumProblem;
+using PascalTriangle;
 
 namespace AllArrayPrograms
 {
@@ -66,41 +67,24 @@ namespace AllArrayPrograms
             { 26, CountSubArrayWithGivenSum},
             { 27, MajorityElementNby3},
             { 28, ThreeSumProblem},
+            { 29, PascalTriangle},
 
         };
 
-        private static void ThreeSumProblem()
+        private static void PascalTriangle()
         {
-            int[] inpArray = InputArray();
-            //var triplets = ThreeSumClass.FindTripletsMethod1(inpArray);
-            //var triplets = ThreeSumClass.FindTripletsMethod2(inpArray);
-            var triplets = ThreeSumClass.FindTripletsMethod3(inpArray);
-            foreach (var innerList in triplets)
-            {
-                Console.WriteLine(string.Join(", ", innerList));
-            }
-        }
-
-        private static void MajorityElementNby3()
-        {
-            int[] inpArray = InputArray();
-            //IList<int> list = MajorityElementNby3Class.MajorityElement(inpArray);
-            IList<int> list = MajorityElementNby3Class.MajorityElementMethod1(inpArray);
-            foreach (int num in list)
-            {
-                Console.Write(num+" ");
-            }
-        }
-
-        private static void CountSubArrayWithGivenSum()
-        {
-            int[] array = InputArray();
-            Console.WriteLine("Please enter sub array sum to count no of sub arrays");
-            int.TryParse(Console.ReadLine(), out int k);
-            int subArrayCount = CountSubArrayWithGivenSumClass.CountSubArraysCount(array, k);
-            int subArrayCount2 = CountSubArrayWithGivenSumClass.CountSubArraysCountMethod2(array, k);
-            Console.WriteLine($"Number of sub arrays with given sum using Method1 is {subArrayCount}");
-            Console.WriteLine($"Number of sub arrays with given sum using Method2 is {subArrayCount2}");
+            Console.WriteLine("Enter the row number: ");
+            int r = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter the col number: ");
+            int c = int.Parse(Console.ReadLine());
+            Console.WriteLine("Pascal triangle value at rth row and nth column is: ");
+            PascalTriangleClass.PascalTriangleType1(r,c);
+            Console.WriteLine("Pascal triange entire row for give r is:");
+            PascalTriangleClass.PascalTriangleType2(r);
+            Console.WriteLine("Pascal triange for r rows is:");
+            PascalTriangleClass.pascalTriangleType3Method1(r);
+            Console.WriteLine("Method2");
+            PascalTriangleClass.pascalTriangleType3Method2(r);
         }
 
         private static string GetProgramDescription(int index)
@@ -137,6 +121,7 @@ namespace AllArrayPrograms
                 26 => "Count subarrays with given sum",
                 27 => "Majority element more than N/3 times",
                 28 => "Three Sum Problem (Find Triplets)",
+                29 => "PascalTriangle",
                 _ => "Unknow Program"//Default Program
             };
         }
@@ -484,6 +469,37 @@ namespace AllArrayPrograms
             //int[] result = LeaderElements.FindLeaderElements(inpArray);
             int[] result = LeaderElements.FindLeaderElementsMethod2(inpArray);
             PrintArray(result, result.Length);
+        }
+        private static void ThreeSumProblem()
+        {
+            int[] inpArray = InputArray();
+            //var triplets = ThreeSumClass.FindTripletsMethod1(inpArray);
+            //var triplets = ThreeSumClass.FindTripletsMethod2(inpArray);
+            var triplets = ThreeSumClass.FindTripletsMethod3(inpArray);
+            foreach (var innerList in triplets)
+            {
+                Console.WriteLine(string.Join(", ", innerList));
+            }
+        }
+        private static void MajorityElementNby3()
+        {
+            int[] inpArray = InputArray();
+            //IList<int> list = MajorityElementNby3Class.MajorityElement(inpArray);
+            IList<int> list = MajorityElementNby3Class.MajorityElementMethod1(inpArray);
+            foreach (int num in list)
+            {
+                Console.Write(num + " ");
+            }
+        }
+        private static void CountSubArrayWithGivenSum()
+        {
+            int[] array = InputArray();
+            Console.WriteLine("Please enter sub array sum to count no of sub arrays");
+            int.TryParse(Console.ReadLine(), out int k);
+            int subArrayCount = CountSubArrayWithGivenSumClass.CountSubArraysCount(array, k);
+            int subArrayCount2 = CountSubArrayWithGivenSumClass.CountSubArraysCountMethod2(array, k);
+            Console.WriteLine($"Number of sub arrays with given sum using Method1 is {subArrayCount}");
+            Console.WriteLine($"Number of sub arrays with given sum using Method2 is {subArrayCount2}");
         }
     }
 }
