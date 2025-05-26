@@ -31,6 +31,7 @@ using MajorityElementNby3;
 using _3SumProblem;
 using PascalTriangle;
 using _4SumProblem;
+using LengthOfLongestSubArrayWithSum0;
 
 namespace AllArrayPrograms
 {
@@ -70,8 +71,18 @@ namespace AllArrayPrograms
             { 28, ThreeSumProblem},
             { 29, PascalTriangle},
             { 30, FourSumProblem},
+            { 31, LengthOfLongestSubArrayWithSum0},
 
         };
+
+        private static void LengthOfLongestSubArrayWithSum0()
+        {
+            int[] inpArray = InputArray();
+            int maxLength = LengthOfLongestSubArrayWithSum0Class.FindLongestSubArrayLength(inpArray);
+            int maxLength2 = LengthOfLongestSubArrayWithSum0Class.FindLongestSubArrayLengthMethod2(inpArray);
+            Console.WriteLine("Longest SubArray with sum zeros using method1 is: "+ maxLength);
+            Console.WriteLine("Longest SubArray with sum zeros using method2 is: "+ maxLength2);
+        }
 
         private static void FourSumProblem()
         {
@@ -136,6 +147,8 @@ namespace AllArrayPrograms
                 27 => "Majority element more than N/3 times",
                 28 => "Three Sum Problem (Find Triplets)",
                 29 => "PascalTriangle",
+                30 => "Four sum problem",
+                31 => "length of longest sub array with sum 0",
                 _ => "Unknow Program"//Default Program
             };
         }
