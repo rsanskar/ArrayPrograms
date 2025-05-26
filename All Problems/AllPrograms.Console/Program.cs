@@ -30,6 +30,7 @@ using CountSubArrayWithGivenSum;
 using MajorityElementNby3;
 using _3SumProblem;
 using PascalTriangle;
+using _4SumProblem;
 
 namespace AllArrayPrograms
 {
@@ -68,8 +69,21 @@ namespace AllArrayPrograms
             { 27, MajorityElementNby3},
             { 28, ThreeSumProblem},
             { 29, PascalTriangle},
+            { 30, FourSumProblem},
 
         };
+
+        private static void FourSumProblem()
+        {
+            int[] inpArray = InputArray();
+            int.TryParse(Console.ReadLine(),out int target);
+            IList<IList<int>> listOFList =  FourSumClass.FindFourSumMethod1(inpArray, target);
+            foreach(List<int> list in listOFList)
+            {
+                Console.WriteLine(string.Join(",",list));
+            }
+
+        }
 
         private static void PascalTriangle()
         {
