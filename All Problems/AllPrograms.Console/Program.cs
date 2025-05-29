@@ -33,6 +33,7 @@ using PascalTriangle;
 using _4SumProblem;
 using LengthOfLongestSubArrayWithSum0;
 using CountSubarraysWithGivenXORK;
+using FindMissingAndRepeatingElement;
 
 namespace AllArrayPrograms
 {
@@ -74,8 +75,29 @@ namespace AllArrayPrograms
             { 30, FourSumProblem},
             { 31, LengthOfLongestSubArrayWithSum0},
             { 32, CountSubarraysWithGivenXORK},
+            { 33, FindMissingAndRepeatingElement},
 
         };
+
+        private static void FindMissingAndRepeatingElement()
+        {
+            int[] inpArray = InputArray();
+            int n;
+            Console.Write("Enter the value of n: ");
+            int.TryParse(Console.ReadLine(), out n);
+            List<int> list = FindMissingAndRepeatingElementClass.FindMissingAndRepeatingNumbers(inpArray, n);
+            Console.WriteLine("Missing Number in array is: " + list[0]);
+            Console.WriteLine("Repeating Number in array is: " + list[1]);
+            Console.WriteLine("-------------------------------------------");
+            List<int> list1 = FindMissingAndRepeatingElementClass.FindMissingAndRepeatingNumbersMethod2(inpArray, n);
+            Console.WriteLine("Missing Number in array using Method2 is: " + list1[0]);
+            Console.WriteLine("Repeating Number in array using Method2 is: " + list1[1]);
+            Console.WriteLine("-------------------------------------------");
+            List<int> list2 = FindMissingAndRepeatingElementClass.FindMissingAndRepeatingNumbersMethod3(inpArray, n);
+            Console.WriteLine("Missing Number in array using Method3 is: " + list2[0]);
+            Console.WriteLine("Repeating Number in array using Method3 is: " + list2[1]);
+            Console.WriteLine("-------------------------------------------");
+        }
 
         private static void CountSubarraysWithGivenXORK()
         {
@@ -162,6 +184,7 @@ namespace AllArrayPrograms
                 30 => "Four sum problem",
                 31 => "length of longest sub array with sum 0",
                 32 => "Count subarrays with given xor K",
+                33 => "find missing and repeating number in array fro 1 to n",
                 _ => "Unknow Program"//Default Program
             };
         }
