@@ -32,6 +32,7 @@ using _3SumProblem;
 using PascalTriangle;
 using _4SumProblem;
 using LengthOfLongestSubArrayWithSum0;
+using CountSubarraysWithGivenXORK;
 
 namespace AllArrayPrograms
 {
@@ -72,8 +73,19 @@ namespace AllArrayPrograms
             { 29, PascalTriangle},
             { 30, FourSumProblem},
             { 31, LengthOfLongestSubArrayWithSum0},
+            { 32, CountSubarraysWithGivenXORK},
 
         };
+
+        private static void CountSubarraysWithGivenXORK()
+        {
+            int[] inpArray = InputArray();
+            int k;
+            Console.Write("Enter the value of K: ");
+            int.TryParse(Console.ReadLine(), out k);
+            int count = CountSubarraysWithGivenXORKClass.CountSubArrays(inpArray,k);
+            Console.WriteLine("Number of sub arrays with given xor k with method1 is "+count);
+        }
 
         private static void LengthOfLongestSubArrayWithSum0()
         {
@@ -143,12 +155,13 @@ namespace AllArrayPrograms
                 23 => "Rotate Image by 90 degree(Clock wise)",
                 24 => "Rotate Image by 90 degree(Anti Clock wise)",
                 25 => "Spiral Traversal of Matrix",
-                26 => "Count subarrays with given sum",
+                26 => "find number of subarrays with given sum k",
                 27 => "Majority element more than N/3 times",
                 28 => "Three Sum Problem (Find Triplets)",
                 29 => "PascalTriangle",
                 30 => "Four sum problem",
                 31 => "length of longest sub array with sum 0",
+                32 => "Count subarrays with given xor K",
                 _ => "Unknow Program"//Default Program
             };
         }

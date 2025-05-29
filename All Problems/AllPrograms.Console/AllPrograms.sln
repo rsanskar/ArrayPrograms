@@ -73,6 +73,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4SumProblem", "..\AllProgra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LengthOfLongestSubArrayWithSum0", "..\AllPrograms.Logic\LengthOfLongestSubArrayWithSum0\LengthOfLongestSubArrayWithSum0.csproj", "{5E549407-40AE-42BE-A9CD-F5C0BA28B536}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountSubarraysWithGivenXORK", "..\AllPrograms.Logic\CountSubarraysWithGivenXORK\CountSubarraysWithGivenXORK.csproj", "{FCB286B5-1DBD-47C6-9334-766FCFB48EEB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -211,6 +213,10 @@ Global
 		{5E549407-40AE-42BE-A9CD-F5C0BA28B536}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E549407-40AE-42BE-A9CD-F5C0BA28B536}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E549407-40AE-42BE-A9CD-F5C0BA28B536}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCB286B5-1DBD-47C6-9334-766FCFB48EEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCB286B5-1DBD-47C6-9334-766FCFB48EEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCB286B5-1DBD-47C6-9334-766FCFB48EEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCB286B5-1DBD-47C6-9334-766FCFB48EEB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -249,6 +255,7 @@ Global
 		{12F52CBC-9852-40B2-B9CD-7696CF52619F} = {C56CC963-007E-430D-B094-07ACDF563E34}
 		{4474D6E8-ED3A-499D-B665-BD9B98E2BB2C} = {C56CC963-007E-430D-B094-07ACDF563E34}
 		{5E549407-40AE-42BE-A9CD-F5C0BA28B536} = {C56CC963-007E-430D-B094-07ACDF563E34}
+		{FCB286B5-1DBD-47C6-9334-766FCFB48EEB} = {C56CC963-007E-430D-B094-07ACDF563E34}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {144249E9-F917-4866-A1B1-89E38358BE18}
