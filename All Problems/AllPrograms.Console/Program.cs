@@ -36,6 +36,7 @@ using CountSubarraysWithGivenXORK;
 using FindMissingAndRepeatingElement;
 using CountInversionsInArray;
 using MergeSortAlogorithm;
+using CountReversePairs;
 
 namespace AllArrayPrograms
 {
@@ -80,6 +81,7 @@ namespace AllArrayPrograms
             { 33, FindMissingAndRepeatingElement},
             { 34, CountInversionsInArray},
             { 35, MergeSort},
+            { 36, CountReversePairs},
 
         };
 
@@ -124,6 +126,7 @@ namespace AllArrayPrograms
                 33 => "find missing and repeating number in array from 1 to n",
                 34 => "find number of inversions in the given array",
                 35 => "Merge sort algorithm",
+                36 => "Count Reverse pairs",
                 _ => "Unknow Program"//Default Program
             };
         }
@@ -579,6 +582,15 @@ namespace AllArrayPrograms
             int[] array = InputArray();
             MergeSortAlogorithmClass.MergeSort(array, 0, array.Length - 1);
             PrintArray(array,array.Length);
+        }
+
+        private static void CountReversePairs()
+        {
+            int[] array = InputArray();
+            int count = CountReversePairsClass.CountReversePairsInArray(array);
+            int count1 = CountReversePairsClass.MergeSort(array,0,array.Length-1);
+            Console.WriteLine("Number of pairs using Method1 is: "+ count);
+            Console.WriteLine("Number of pairs using Method2 is: "+ count1);
         }
     }
 }
