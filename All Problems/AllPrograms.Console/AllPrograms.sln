@@ -79,6 +79,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindMissingAndRepeatingElem
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountInversionsInArray", "..\AllPrograms.Logic\CountInversionsInArray\CountInversionsInArray.csproj", "{F566C686-4F49-44A7-AFF6-E53C923562EE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeSortAlogorithm", "..\AllPrograms.Logic\MergeSortAlogorithm\MergeSortAlogorithm.csproj", "{81C55B4C-88D0-447B-B9B3-4B381183855E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -229,6 +231,10 @@ Global
 		{F566C686-4F49-44A7-AFF6-E53C923562EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F566C686-4F49-44A7-AFF6-E53C923562EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F566C686-4F49-44A7-AFF6-E53C923562EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81C55B4C-88D0-447B-B9B3-4B381183855E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81C55B4C-88D0-447B-B9B3-4B381183855E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81C55B4C-88D0-447B-B9B3-4B381183855E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81C55B4C-88D0-447B-B9B3-4B381183855E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -270,6 +276,7 @@ Global
 		{FCB286B5-1DBD-47C6-9334-766FCFB48EEB} = {C56CC963-007E-430D-B094-07ACDF563E34}
 		{F25F954A-85D5-466E-A58B-2825242095B5} = {C56CC963-007E-430D-B094-07ACDF563E34}
 		{F566C686-4F49-44A7-AFF6-E53C923562EE} = {C56CC963-007E-430D-B094-07ACDF563E34}
+		{81C55B4C-88D0-447B-B9B3-4B381183855E} = {C56CC963-007E-430D-B094-07ACDF563E34}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {144249E9-F917-4866-A1B1-89E38358BE18}

@@ -35,6 +35,7 @@ using LengthOfLongestSubArrayWithSum0;
 using CountSubarraysWithGivenXORK;
 using FindMissingAndRepeatingElement;
 using CountInversionsInArray;
+using MergeSortAlogorithm;
 
 namespace AllArrayPrograms
 {
@@ -78,6 +79,7 @@ namespace AllArrayPrograms
             { 32, CountSubarraysWithGivenXORK},
             { 33, FindMissingAndRepeatingElement},
             { 34, CountInversionsInArray},
+            { 35, MergeSort},
 
         };
 
@@ -121,6 +123,7 @@ namespace AllArrayPrograms
                 32 => "Count subarrays with given xor K",
                 33 => "find missing and repeating number in array from 1 to n",
                 34 => "find number of inversions in the given array",
+                35 => "Merge sort algorithm",
                 _ => "Unknow Program"//Default Program
             };
         }
@@ -569,6 +572,13 @@ namespace AllArrayPrograms
             PascalTriangleClass.pascalTriangleType3Method1(r);
             Console.WriteLine("Method2");
             PascalTriangleClass.pascalTriangleType3Method2(r);
+        }
+
+        private static void MergeSort()
+        {
+            int[] array = InputArray();
+            MergeSortAlogorithmClass.MergeSort(array, 0, array.Length - 1);
+            PrintArray(array,array.Length);
         }
     }
 }
