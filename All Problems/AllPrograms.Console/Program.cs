@@ -37,6 +37,7 @@ using FindMissingAndRepeatingElement;
 using CountInversionsInArray;
 using MergeSortAlogorithm;
 using CountReversePairs;
+using MaximumProductSubarray;
 
 namespace AllArrayPrograms
 {
@@ -82,8 +83,19 @@ namespace AllArrayPrograms
             { 34, CountInversionsInArray},
             { 35, MergeSort},
             { 36, CountReversePairs},
+            { 37, MaximumProductSubarray},
 
         };
+
+        private static void MaximumProductSubarray()
+        {
+            int[] array = InputArray();
+            int maxProd = MaximumProductSubarrayClass.FindMaxProduct(array);
+            Console.WriteLine("Max Product in sub array is: "+ maxProd);
+            int maxProd1 = MaximumProductSubarrayClass.FindMaxProductMethod1(array);
+            Console.WriteLine("Max Product in sub array using method 2 is: " + maxProd1);
+
+        }
 
         private static string GetProgramDescription(int index)
         {
@@ -127,6 +139,7 @@ namespace AllArrayPrograms
                 34 => "find number of inversions in the given array",
                 35 => "Merge sort algorithm",
                 36 => "Count Reverse pairs",
+                37 => "Maximum Product Subarray in an Array",
                 _ => "Unknow Program"//Default Program
             };
         }
