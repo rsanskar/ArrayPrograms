@@ -34,6 +34,7 @@ using _4SumProblem;
 using LengthOfLongestSubArrayWithSum0;
 using CountSubarraysWithGivenXORK;
 using FindMissingAndRepeatingElement;
+using CountInversionsInArray;
 
 namespace AllArrayPrograms
 {
@@ -76,8 +77,18 @@ namespace AllArrayPrograms
             { 31, LengthOfLongestSubArrayWithSum0},
             { 32, CountSubarraysWithGivenXORK},
             { 33, FindMissingAndRepeatingElement},
+            { 34, CountInversionsInArray},
 
         };
+
+        private static void CountInversionsInArray()
+        {
+            int[] inpArray = InputArray();
+            int count = CountInversionsInArrayClass.CountInversionsInArrayMethod1(inpArray);
+            Console.WriteLine("Number of inversions in array is: " + count);
+            int count1 = CountInversionsInArrayClass.MergeSort(inpArray,0,inpArray.Length-1);
+            Console.WriteLine("Number of inversions in array is: " + count1);
+        }
 
         private static void FindMissingAndRepeatingElement()
         {
@@ -133,9 +144,9 @@ namespace AllArrayPrograms
         private static void PascalTriangle()
         {
             Console.WriteLine("Enter the row number: ");
-            int r = int.Parse(Console.ReadLine());
+            int.TryParse(Console.ReadLine(), out int r);
             Console.WriteLine("Enter the col number: ");
-            int c = int.Parse(Console.ReadLine());
+            int.TryParse(Console.ReadLine(), out int c);
             Console.WriteLine("Pascal triangle value at rth row and nth column is: ");
             PascalTriangleClass.PascalTriangleType1(r,c);
             Console.WriteLine("Pascal triange entire row for give r is:");
@@ -184,7 +195,8 @@ namespace AllArrayPrograms
                 30 => "Four sum problem",
                 31 => "length of longest sub array with sum 0",
                 32 => "Count subarrays with given xor K",
-                33 => "find missing and repeating number in array fro 1 to n",
+                33 => "find missing and repeating number in array from 1 to n",
+                34 => "find number of inversions in the given array",
                 _ => "Unknow Program"//Default Program
             };
         }
