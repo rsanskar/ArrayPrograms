@@ -81,82 +81,6 @@ namespace AllArrayPrograms
 
         };
 
-        private static void CountInversionsInArray()
-        {
-            int[] inpArray = InputArray();
-            int count = CountInversionsInArrayClass.CountInversionsInArrayMethod1(inpArray);
-            Console.WriteLine("Number of inversions in array is: " + count);
-            int count1 = CountInversionsInArrayClass.MergeSort(inpArray,0,inpArray.Length-1);
-            Console.WriteLine("Number of inversions in array is: " + count1);
-        }
-
-        private static void FindMissingAndRepeatingElement()
-        {
-            int[] inpArray = InputArray();
-            int n;
-            Console.Write("Enter the value of n: ");
-            int.TryParse(Console.ReadLine(), out n);
-            List<int> list = FindMissingAndRepeatingElementClass.FindMissingAndRepeatingNumbers(inpArray, n);
-            Console.WriteLine("Missing Number in array is: " + list[0]);
-            Console.WriteLine("Repeating Number in array is: " + list[1]);
-            Console.WriteLine("-------------------------------------------");
-            List<int> list1 = FindMissingAndRepeatingElementClass.FindMissingAndRepeatingNumbersMethod2(inpArray, n);
-            Console.WriteLine("Missing Number in array using Method2 is: " + list1[0]);
-            Console.WriteLine("Repeating Number in array using Method2 is: " + list1[1]);
-            Console.WriteLine("-------------------------------------------");
-            List<int> list2 = FindMissingAndRepeatingElementClass.FindMissingAndRepeatingNumbersMethod3(inpArray, n);
-            Console.WriteLine("Missing Number in array using Method3 is: " + list2[0]);
-            Console.WriteLine("Repeating Number in array using Method3 is: " + list2[1]);
-            Console.WriteLine("-------------------------------------------");
-        }
-
-        private static void CountSubarraysWithGivenXORK()
-        {
-            int[] inpArray = InputArray();
-            int k;
-            Console.Write("Enter the value of K: ");
-            int.TryParse(Console.ReadLine(), out k);
-            int count = CountSubarraysWithGivenXORKClass.CountSubArrays(inpArray,k);
-            Console.WriteLine("Number of sub arrays with given xor k with method1 is "+count);
-        }
-
-        private static void LengthOfLongestSubArrayWithSum0()
-        {
-            int[] inpArray = InputArray();
-            int maxLength = LengthOfLongestSubArrayWithSum0Class.FindLongestSubArrayLength(inpArray);
-            int maxLength2 = LengthOfLongestSubArrayWithSum0Class.FindLongestSubArrayLengthMethod2(inpArray);
-            Console.WriteLine("Longest SubArray with sum zeros using method1 is: "+ maxLength);
-            Console.WriteLine("Longest SubArray with sum zeros using method2 is: "+ maxLength2);
-        }
-
-        private static void FourSumProblem()
-        {
-            int[] inpArray = InputArray();
-            int.TryParse(Console.ReadLine(),out int target);
-            IList<IList<int>> listOFList =  FourSumClass.FindFourSumMethod1(inpArray, target);
-            foreach(List<int> list in listOFList)
-            {
-                Console.WriteLine(string.Join(",",list));
-            }
-
-        }
-
-        private static void PascalTriangle()
-        {
-            Console.WriteLine("Enter the row number: ");
-            int.TryParse(Console.ReadLine(), out int r);
-            Console.WriteLine("Enter the col number: ");
-            int.TryParse(Console.ReadLine(), out int c);
-            Console.WriteLine("Pascal triangle value at rth row and nth column is: ");
-            PascalTriangleClass.PascalTriangleType1(r,c);
-            Console.WriteLine("Pascal triange entire row for give r is:");
-            PascalTriangleClass.PascalTriangleType2(r);
-            Console.WriteLine("Pascal triange for r rows is:");
-            PascalTriangleClass.pascalTriangleType3Method1(r);
-            Console.WriteLine("Method2");
-            PascalTriangleClass.pascalTriangleType3Method2(r);
-        }
-
         private static string GetProgramDescription(int index)
         {
             // You can hardcode or map descriptions here
@@ -575,6 +499,76 @@ namespace AllArrayPrograms
             int subArrayCount2 = CountSubArrayWithGivenSumClass.CountSubArraysCountMethod2(array, k);
             Console.WriteLine($"Number of sub arrays with given sum using Method1 is {subArrayCount}");
             Console.WriteLine($"Number of sub arrays with given sum using Method2 is {subArrayCount2}");
+        }
+        private static void CountInversionsInArray()
+        {
+            int[] inpArray = InputArray();
+            int count = CountInversionsInArrayClass.CountInversionsInArrayMethod1(inpArray);
+            Console.WriteLine("Number of inversions in array is: " + count);
+            int count1 = CountInversionsInArrayClass.MergeSort(inpArray, 0, inpArray.Length - 1);
+            Console.WriteLine("Number of inversions in array is: " + count1);
+        }
+        private static void FindMissingAndRepeatingElement()
+        {
+            int[] inpArray = InputArray();
+            int n;
+            Console.Write("Enter the value of n: ");
+            int.TryParse(Console.ReadLine(), out n);
+            List<int> list = FindMissingAndRepeatingElementClass.FindMissingAndRepeatingNumbers(inpArray, n);
+            Console.WriteLine("Missing Number in array is: " + list[0]);
+            Console.WriteLine("Repeating Number in array is: " + list[1]);
+            Console.WriteLine("-------------------------------------------");
+            List<int> list1 = FindMissingAndRepeatingElementClass.FindMissingAndRepeatingNumbersMethod2(inpArray, n);
+            Console.WriteLine("Missing Number in array using Method2 is: " + list1[0]);
+            Console.WriteLine("Repeating Number in array using Method2 is: " + list1[1]);
+            Console.WriteLine("-------------------------------------------");
+            List<int> list2 = FindMissingAndRepeatingElementClass.FindMissingAndRepeatingNumbersMethod3(inpArray, n);
+            Console.WriteLine("Missing Number in array using Method3 is: " + list2[0]);
+            Console.WriteLine("Repeating Number in array using Method3 is: " + list2[1]);
+            Console.WriteLine("-------------------------------------------");
+        }
+        private static void CountSubarraysWithGivenXORK()
+        {
+            int[] inpArray = InputArray();
+            int k;
+            Console.Write("Enter the value of K: ");
+            int.TryParse(Console.ReadLine(), out k);
+            int count = CountSubarraysWithGivenXORKClass.CountSubArrays(inpArray, k);
+            Console.WriteLine("Number of sub arrays with given xor k with method1 is " + count);
+        }
+        private static void LengthOfLongestSubArrayWithSum0()
+        {
+            int[] inpArray = InputArray();
+            int maxLength = LengthOfLongestSubArrayWithSum0Class.FindLongestSubArrayLength(inpArray);
+            int maxLength2 = LengthOfLongestSubArrayWithSum0Class.FindLongestSubArrayLengthMethod2(inpArray);
+            Console.WriteLine("Longest SubArray with sum zeros using method1 is: " + maxLength);
+            Console.WriteLine("Longest SubArray with sum zeros using method2 is: " + maxLength2);
+        }
+        private static void FourSumProblem()
+        {
+            int[] inpArray = InputArray();
+            int.TryParse(Console.ReadLine(), out int target);
+            IList<IList<int>> listOFList = FourSumClass.FindFourSumMethod1(inpArray, target);
+            foreach (List<int> list in listOFList)
+            {
+                Console.WriteLine(string.Join(",", list));
+            }
+
+        }
+        private static void PascalTriangle()
+        {
+            Console.WriteLine("Enter the row number: ");
+            int.TryParse(Console.ReadLine(), out int r);
+            Console.WriteLine("Enter the col number: ");
+            int.TryParse(Console.ReadLine(), out int c);
+            Console.WriteLine("Pascal triangle value at rth row and nth column is: ");
+            PascalTriangleClass.PascalTriangleType1(r, c);
+            Console.WriteLine("Pascal triange entire row for give r is:");
+            PascalTriangleClass.PascalTriangleType2(r);
+            Console.WriteLine("Pascal triange for r rows is:");
+            PascalTriangleClass.pascalTriangleType3Method1(r);
+            Console.WriteLine("Method2");
+            PascalTriangleClass.pascalTriangleType3Method2(r);
         }
     }
 }
