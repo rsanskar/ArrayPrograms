@@ -85,6 +85,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountReversePairs", "..\All
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaximumProductSubarray", "..\AllPrograms.Logic\MaximumProductSubarray\MaximumProductSubarray.csproj", "{4D64EACA-FD7B-41B8-982B-E68DF8AB4277}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BS On 1D Arrays", "BS On 1D Arrays", "{0EFAD1EA-D236-4E8F-98A3-838BC3C1BF18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binary Search Algorithm", "..\Binary Search Algorithm\Binary Search Algorithm.csproj", "{60BAF2C5-1891-4FE1-B90E-4A54DEFB1C4C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -247,6 +251,10 @@ Global
 		{4D64EACA-FD7B-41B8-982B-E68DF8AB4277}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D64EACA-FD7B-41B8-982B-E68DF8AB4277}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D64EACA-FD7B-41B8-982B-E68DF8AB4277}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60BAF2C5-1891-4FE1-B90E-4A54DEFB1C4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60BAF2C5-1891-4FE1-B90E-4A54DEFB1C4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60BAF2C5-1891-4FE1-B90E-4A54DEFB1C4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60BAF2C5-1891-4FE1-B90E-4A54DEFB1C4C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -291,6 +299,8 @@ Global
 		{81C55B4C-88D0-447B-B9B3-4B381183855E} = {C56CC963-007E-430D-B094-07ACDF563E34}
 		{6F3909CC-3F0D-4EE1-A9C0-B87658889439} = {C56CC963-007E-430D-B094-07ACDF563E34}
 		{4D64EACA-FD7B-41B8-982B-E68DF8AB4277} = {C56CC963-007E-430D-B094-07ACDF563E34}
+		{0EFAD1EA-D236-4E8F-98A3-838BC3C1BF18} = {C56CC963-007E-430D-B094-07ACDF563E34}
+		{60BAF2C5-1891-4FE1-B90E-4A54DEFB1C4C} = {0EFAD1EA-D236-4E8F-98A3-838BC3C1BF18}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {144249E9-F917-4866-A1B1-89E38358BE18}

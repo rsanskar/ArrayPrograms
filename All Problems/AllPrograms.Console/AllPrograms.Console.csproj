@@ -10,6 +10,10 @@
 	<ItemGroup>
 		<ProjectReference Include="..\AllPrograms.Logic\**\*.csproj" />
 	</ItemGroup>
+	
+	<ItemGroup>
+	  <ProjectReference Include="..\Binary Search Algorithm\Binary Search Algorithm.csproj" />
+	</ItemGroup>
 
 
 </Project>

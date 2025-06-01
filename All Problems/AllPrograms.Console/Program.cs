@@ -38,6 +38,7 @@ using CountInversionsInArray;
 using MergeSortAlogorithm;
 using CountReversePairs;
 using MaximumProductSubarray;
+using Binary_Search_Algorithm;
 
 namespace AllArrayPrograms
 {
@@ -84,8 +85,21 @@ namespace AllArrayPrograms
             { 35, MergeSort},
             { 36, CountReversePairs},
             { 37, MaximumProductSubarray},
+            { 38, FindBinarySearch},
 
         };
+
+        private static void FindBinarySearch()
+        {
+            int[] inpArray = InputArray();
+            Console.WriteLine("Enter target: ");
+            int.TryParse(Console.ReadLine(),out int target);
+            int ele = BinarySearch.SearchElement(inpArray, target);
+            int ele2 = BinarySearch.SearchElementMethod2(inpArray, target);
+            Console.WriteLine("Ele found using Binary Search method1 is: "+ele);
+            Console.WriteLine("Ele found using Binary Search method2 is: "+ele2);
+
+        }
 
         private static void MaximumProductSubarray()
         {
@@ -375,8 +389,8 @@ namespace AllArrayPrograms
         private static void SingleNumberInArray()
         {
             int[] inpArray = InputArray();
-            //int singleNumber = Solution.SingleNumberMethod1(inpArray);
-            int singleNumber = Solution.SingleNumberMethod2(inpArray);
+            int singleNumber = Solution.SingleNumberMethod1(inpArray);
+            //int singleNumber = Solution.SingleNumberMethod2(inpArray);
             Console.WriteLine($"Single number in the give array is : {singleNumber}");
         }
         private static void RearrangeArrayElementsBySign()
@@ -605,5 +619,6 @@ namespace AllArrayPrograms
             Console.WriteLine("Number of pairs using Method1 is: "+ count);
             Console.WriteLine("Number of pairs using Method2 is: "+ count1);
         }
+        
     }
 }
