@@ -39,6 +39,8 @@ using MergeSortAlogorithm;
 using CountReversePairs;
 using MaximumProductSubarray;
 using Binary_Search_Algorithm;
+using ImplementLowerBound;
+using ImplementUpperBound;
 
 namespace AllArrayPrograms
 {
@@ -86,30 +88,12 @@ namespace AllArrayPrograms
             { 36, CountReversePairs},
             { 37, MaximumProductSubarray},
             { 38, FindBinarySearch},
+            { 39, FindLowerBoundUsingBS},
+            { 40, FindUpperBoundUsingBS},
 
         };
 
-        private static void FindBinarySearch()
-        {
-            int[] inpArray = InputArray();
-            Console.WriteLine("Enter target: ");
-            int.TryParse(Console.ReadLine(),out int target);
-            int ele = BinarySearch.SearchElement(inpArray, target);
-            int ele2 = BinarySearch.SearchElementMethod2(inpArray, target);
-            Console.WriteLine("Ele found using Binary Search method1 is: "+ele);
-            Console.WriteLine("Ele found using Binary Search method2 is: "+ele2);
-
-        }
-
-        private static void MaximumProductSubarray()
-        {
-            int[] array = InputArray();
-            int maxProd = MaximumProductSubarrayClass.FindMaxProduct(array);
-            Console.WriteLine("Max Product in sub array is: "+ maxProd);
-            int maxProd1 = MaximumProductSubarrayClass.FindMaxProductMethod1(array);
-            Console.WriteLine("Max Product in sub array using method 2 is: " + maxProd1);
-
-        }
+        
 
         private static string GetProgramDescription(int index)
         {
@@ -154,6 +138,8 @@ namespace AllArrayPrograms
                 35 => "Merge sort algorithm",
                 36 => "Count Reverse pairs",
                 37 => "Maximum Product Subarray in an Array",
+                38 => "Binary Search",
+                39 => "Find Lower Bound using Binary search",
                 _ => "Unknow Program"//Default Program
             };
         }
@@ -619,6 +605,51 @@ namespace AllArrayPrograms
             Console.WriteLine("Number of pairs using Method1 is: "+ count);
             Console.WriteLine("Number of pairs using Method2 is: "+ count1);
         }
-        
+
+        private static void FindUpperBoundUsingBS()
+        {
+            int[] inpArray = InputArray();
+            Console.WriteLine("Enter target: ");
+            int.TryParse(Console.ReadLine(), out int target);
+            int lb = ImplementUpperBoundUsingBS.FindUpperBound(inpArray, target);
+            Console.WriteLine("Ele found using Binary Search using method1(Lower bound) is: " + lb);
+            int lb2 = ImplementUpperBoundUsingBS.FindUpperBoundMethod1(inpArray, target);
+            Console.WriteLine("Ele found using Binary Search using method2(Lower bound) is: " + lb2);
+
+        }
+
+        private static void FindLowerBoundUsingBS()
+        {
+            int[] inpArray = InputArray();
+            Console.WriteLine("Enter target: ");
+            int.TryParse(Console.ReadLine(), out int target);
+            int lb = ImplementLowerBoundUsingBS.FindLowerBound(inpArray, target);
+            Console.WriteLine("Ele found using Binary Search using method1(Lower bound) is: " + lb);
+            int lb2 = ImplementLowerBoundUsingBS.FindLowerBoundMethod1(inpArray, target);
+            Console.WriteLine("Ele found using Binary Search using method2(Lower bound) is: " + lb2);
+        }
+
+        private static void FindBinarySearch()
+        {
+            int[] inpArray = InputArray();
+            Console.WriteLine("Enter target: ");
+            int.TryParse(Console.ReadLine(), out int target);
+            int ele = BinarySearch.SearchElement(inpArray, target);
+            int ele2 = BinarySearch.SearchElementMethod2(inpArray, target);
+            Console.WriteLine("Ele found using Binary Search method1 is: " + ele);
+            Console.WriteLine("Ele found using Binary Search method2 is: " + ele2);
+
+        }
+
+        private static void MaximumProductSubarray()
+        {
+            int[] array = InputArray();
+            int maxProd = MaximumProductSubarrayClass.FindMaxProduct(array);
+            Console.WriteLine("Max Product in sub array is: " + maxProd);
+            int maxProd1 = MaximumProductSubarrayClass.FindMaxProductMethod1(array);
+            Console.WriteLine("Max Product in sub array using method 2 is: " + maxProd1);
+
+        }
+
     }
 }
