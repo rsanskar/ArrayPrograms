@@ -41,6 +41,7 @@ using MaximumProductSubarray;
 using Binary_Search_Algorithm;
 using ImplementLowerBound;
 using ImplementUpperBound;
+using SearchInsertPosition;
 
 namespace AllArrayPrograms
 {
@@ -90,10 +91,9 @@ namespace AllArrayPrograms
             { 38, FindBinarySearch},
             { 39, FindLowerBoundUsingBS},
             { 40, FindUpperBoundUsingBS},
+            { 41, SearchInsertPosition},
 
         };
-
-        
 
         private static string GetProgramDescription(int index)
         {
@@ -140,6 +140,8 @@ namespace AllArrayPrograms
                 37 => "Maximum Product Subarray in an Array",
                 38 => "Binary Search",
                 39 => "Find Lower Bound using Binary search",
+                40 => "Find Upper Bound using Binary search",
+                41 => "Find Insert Position using Binary search",
                 _ => "Unknow Program"//Default Program
             };
         }
@@ -649,6 +651,15 @@ namespace AllArrayPrograms
             int maxProd1 = MaximumProductSubarrayClass.FindMaxProductMethod1(array);
             Console.WriteLine("Max Product in sub array using method 2 is: " + maxProd1);
 
+        }
+
+        private static void SearchInsertPosition()
+        {
+            int[] array = InputArray(); 
+            Console.WriteLine("Enter target: ");
+            int.TryParse(Console.ReadLine(), out int target);
+            int position = SearchInsertPositionClass.SearchInsert(array, target);
+            Console.WriteLine("The position to insert the given element using method 1 is: " + position);
         }
 
     }
