@@ -42,6 +42,7 @@ using Binary_Search_Algorithm;
 using ImplementLowerBound;
 using ImplementUpperBound;
 using SearchInsertPosition;
+using FloorAndCeilValueUsingBS;
 
 namespace AllArrayPrograms
 {
@@ -92,8 +93,20 @@ namespace AllArrayPrograms
             { 39, FindLowerBoundUsingBS},
             { 40, FindUpperBoundUsingBS},
             { 41, SearchInsertPosition},
+            { 42, FloorAndCeilValueUsingBS},
 
         };
+
+        private static void FloorAndCeilValueUsingBS()
+        {
+            int[] array = InputArray();
+            Console.WriteLine("Enter target value: ");
+            int.TryParse(Console.ReadLine(), out int target);
+            List<int> list = FloorAndCeilValueUsingBSClass.FindFloorAndCeilValue(array, target);
+            Console.WriteLine("Floor value is : " + list[0]);
+            Console.WriteLine("ceil value is : " + list[1]);
+
+        }
 
         private static string GetProgramDescription(int index)
         {
@@ -142,6 +155,7 @@ namespace AllArrayPrograms
                 39 => "Find Lower Bound using Binary search",
                 40 => "Find Upper Bound using Binary search",
                 41 => "Find Insert Position using Binary search",
+                42 => "Find floor and ceil values using Binary search",
                 _ => "Unknow Program"//Default Program
             };
         }
