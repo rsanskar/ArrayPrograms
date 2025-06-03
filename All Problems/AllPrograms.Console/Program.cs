@@ -43,6 +43,7 @@ using ImplementLowerBound;
 using ImplementUpperBound;
 using SearchInsertPosition;
 using FloorAndCeilValueUsingBS;
+using FirstAndLastPositionOfElement;
 
 namespace AllArrayPrograms
 {
@@ -94,8 +95,18 @@ namespace AllArrayPrograms
             { 40, FindUpperBoundUsingBS},
             { 41, SearchInsertPosition},
             { 42, FloorAndCeilValueUsingBS},
+            { 43, FirstAndLastPositionOfElement},
 
         };
+
+        private static void FirstAndLastPositionOfElement()
+        {
+            int[] array = InputArray();
+            Console.WriteLine("Enter target value: ");
+            int.TryParse(Console.ReadLine(), out int target);
+            int[] ans = FirstAndLastPositionOfElementClass.SearchRange(array, target);
+            Console.WriteLine($"First Position is {ans[0]} and Last Position is {ans[1]}");
+        }
 
         private static void FloorAndCeilValueUsingBS()
         {
@@ -156,6 +167,7 @@ namespace AllArrayPrograms
                 40 => "Find Upper Bound using Binary search",
                 41 => "Find Insert Position using Binary search",
                 42 => "Find floor and ceil values using Binary search",
+                43 => "Find First and Last Position of Element in Sorted Array using Binary Search",
                 _ => "Unknow Program"//Default Program
             };
         }
