@@ -44,6 +44,7 @@ using ImplementUpperBound;
 using SearchInsertPosition;
 using FloorAndCeilValueUsingBS;
 using FirstAndLastPositionOfElement;
+using CountOccurrencesInSortedArray;
 
 namespace AllArrayPrograms
 {
@@ -96,8 +97,21 @@ namespace AllArrayPrograms
             { 41, SearchInsertPosition},
             { 42, FloorAndCeilValueUsingBS},
             { 43, FirstAndLastPositionOfElement},
+            { 44, CountOccurrencesInSortedArray},
 
         };
+
+        private static void CountOccurrencesInSortedArray()
+        {
+            int[] array = InputArray();
+            Console.WriteLine("Enter target value: ");
+            int.TryParse(Console.ReadLine(), out int target);
+            int occurrrences = CountOccurrencesInSortedArrayClass.CountOccurrences(array,target);
+            Console.WriteLine($"Ther target element is repeated for {occurrrences}");
+
+            int occurrrences1 = CountOccurrencesInSortedArrayClass.CountOccurrencesMethod2(array, target);
+            Console.WriteLine($"Ther target element is repeated for {occurrrences1}");
+        }
 
         private static void FirstAndLastPositionOfElement()
         {
@@ -168,6 +182,7 @@ namespace AllArrayPrograms
                 41 => "Find Insert Position using Binary search",
                 42 => "Find floor and ceil values using Binary search",
                 43 => "Find First and Last Position of Element in Sorted Array using Binary Search",
+                44 => "Count Occurrences in Sorted Array",
                 _ => "Unknow Program"//Default Program
             };
         }
