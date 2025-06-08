@@ -101,6 +101,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstAndLastPositionOfEleme
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountOccurrencesInSortedArray", "..\AllPrograms.Logic\CountOccurrencesInSortedArray\CountOccurrencesInSortedArray.csproj", "{D85FA074-84C7-4D9A-AB0A-02C94C3AA8D1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeOverLappingSubIntervals", "..\AllPrograms.Logic\MergeOverLappingSubIntervals\MergeOverLappingSubIntervals.csproj", "{5964A248-C76A-4B6E-9713-74E7493D53EF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -291,6 +293,10 @@ Global
 		{D85FA074-84C7-4D9A-AB0A-02C94C3AA8D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D85FA074-84C7-4D9A-AB0A-02C94C3AA8D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D85FA074-84C7-4D9A-AB0A-02C94C3AA8D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5964A248-C76A-4B6E-9713-74E7493D53EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5964A248-C76A-4B6E-9713-74E7493D53EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5964A248-C76A-4B6E-9713-74E7493D53EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5964A248-C76A-4B6E-9713-74E7493D53EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -343,6 +349,7 @@ Global
 		{75628E03-4077-4A87-99B5-649851B939CC} = {0EFAD1EA-D236-4E8F-98A3-838BC3C1BF18}
 		{F0C5C6B1-3B3A-4E6C-B23D-2EEC3D4F9B37} = {0EFAD1EA-D236-4E8F-98A3-838BC3C1BF18}
 		{D85FA074-84C7-4D9A-AB0A-02C94C3AA8D1} = {0EFAD1EA-D236-4E8F-98A3-838BC3C1BF18}
+		{5964A248-C76A-4B6E-9713-74E7493D53EF} = {C56CC963-007E-430D-B094-07ACDF563E34}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {144249E9-F917-4866-A1B1-89E38358BE18}

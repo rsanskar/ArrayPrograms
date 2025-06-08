@@ -45,6 +45,7 @@ using SearchInsertPosition;
 using FloorAndCeilValueUsingBS;
 using FirstAndLastPositionOfElement;
 using CountOccurrencesInSortedArray;
+using MergeOverLappingSubIntervals;
 
 namespace AllArrayPrograms
 {
@@ -98,8 +99,23 @@ namespace AllArrayPrograms
             { 42, FloorAndCeilValueUsingBS},
             { 43, FirstAndLastPositionOfElement},
             { 44, CountOccurrencesInSortedArray},
+            { 45, MergeOverLappingSubIntervals},
 
         };
+
+        private static void MergeOverLappingSubIntervals()
+        {
+            int[][] arr = { new int[] { 1, 3 }, new int[] { 8, 10 }, new int[] { 2, 6 }, new int[] { 15, 18 } };
+            List<int[]> ans = MergeOverLappingSubIntervalsClass.FindMergeOverLappingSubIntervals(arr);
+
+            Console.WriteLine("The merged intervals are:");
+            foreach (var interval in ans)
+            {
+                Console.Write($"[{interval[0]}, {interval[1]}] ");
+            }
+            Console.WriteLine();
+
+        }
 
         private static void CountOccurrencesInSortedArray()
         {
@@ -183,6 +199,7 @@ namespace AllArrayPrograms
                 42 => "Find floor and ceil values using Binary search",
                 43 => "Find First and Last Position of Element in Sorted Array using Binary Search",
                 44 => "Count Occurrences in Sorted Array",
+                45 => "Merge Over Lapping intervas",
                 _ => "Unknow Program"//Default Program
             };
         }
