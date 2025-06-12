@@ -46,6 +46,7 @@ using FloorAndCeilValueUsingBS;
 using FirstAndLastPositionOfElement;
 using CountOccurrencesInSortedArray;
 using MergeOverLappingSubIntervals;
+using SquareRootOfN;
 
 namespace AllArrayPrograms
 {
@@ -100,8 +101,17 @@ namespace AllArrayPrograms
             { 43, FirstAndLastPositionOfElement},
             { 44, CountOccurrencesInSortedArray},
             { 45, MergeOverLappingSubIntervals},
+            { 46, SquareRootOfN},
 
         };
+
+        private static void SquareRootOfN()
+        {
+            Console.WriteLine("Enter a number to find the floor square root of N");
+            int.TryParse(Console.ReadLine(), out int n);
+            Console.WriteLine("Square Root of N is : "+ SquareRootOfNClass.FindSquareRootOfn(n));
+            Console.WriteLine("Square Root of N using BS is : "+ SquareRootOfNClass.FindSquareRootOfnUsingBS(n));
+        }
 
         private static void MergeOverLappingSubIntervals()
         {
@@ -200,6 +210,7 @@ namespace AllArrayPrograms
                 43 => "Find First and Last Position of Element in Sorted Array using Binary Search",
                 44 => "Count Occurrences in Sorted Array",
                 45 => "Merge Over Lapping intervas",
+                46 => "Find Square root of N ",
                 _ => "Unknow Program"//Default Program
             };
         }

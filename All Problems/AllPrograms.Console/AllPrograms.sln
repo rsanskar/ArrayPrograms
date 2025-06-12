@@ -89,19 +89,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BS On 1D Arrays", "BS On 1D
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Binary Search Algorithm", "..\Binary Search Algorithm\Binary Search Algorithm.csproj", "{60BAF2C5-1891-4FE1-B90E-4A54DEFB1C4C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImplementLowerBound", "..\AllPrograms.Logic\ImplementLowerBound\ImplementLowerBound.csproj", "{A5B0629F-3927-4D21-9B23-800E95021B5C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImplementLowerBound", "..\AllPrograms.Logic\ImplementLowerBound\ImplementLowerBound.csproj", "{A5B0629F-3927-4D21-9B23-800E95021B5C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImplementUpperBound", "..\AllPrograms.Logic\ImplementUpperBound\ImplementUpperBound.csproj", "{EF4A581E-E53D-4885-A1F0-E67E60D70B6E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImplementUpperBound", "..\AllPrograms.Logic\ImplementUpperBound\ImplementUpperBound.csproj", "{EF4A581E-E53D-4885-A1F0-E67E60D70B6E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchInsertPosition", "..\AllPrograms.Logic\SearchInsertPosition\SearchInsertPosition.csproj", "{71FFE99C-74E3-4EFE-96B9-C023554DDC28}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SearchInsertPosition", "..\AllPrograms.Logic\SearchInsertPosition\SearchInsertPosition.csproj", "{71FFE99C-74E3-4EFE-96B9-C023554DDC28}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FloorAndCeilValueUsingBS", "..\AllPrograms.Logic\FloorAndCeilValueUsingBS\FloorAndCeilValueUsingBS.csproj", "{75628E03-4077-4A87-99B5-649851B939CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FloorAndCeilValueUsingBS", "..\AllPrograms.Logic\FloorAndCeilValueUsingBS\FloorAndCeilValueUsingBS.csproj", "{75628E03-4077-4A87-99B5-649851B939CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstAndLastPositionOfElement", "..\AllPrograms.Logic\FirstAndLastPositionOfElement\FirstAndLastPositionOfElement.csproj", "{F0C5C6B1-3B3A-4E6C-B23D-2EEC3D4F9B37}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FirstAndLastPositionOfElement", "..\AllPrograms.Logic\FirstAndLastPositionOfElement\FirstAndLastPositionOfElement.csproj", "{F0C5C6B1-3B3A-4E6C-B23D-2EEC3D4F9B37}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountOccurrencesInSortedArray", "..\AllPrograms.Logic\CountOccurrencesInSortedArray\CountOccurrencesInSortedArray.csproj", "{D85FA074-84C7-4D9A-AB0A-02C94C3AA8D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CountOccurrencesInSortedArray", "..\AllPrograms.Logic\CountOccurrencesInSortedArray\CountOccurrencesInSortedArray.csproj", "{D85FA074-84C7-4D9A-AB0A-02C94C3AA8D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeOverLappingSubIntervals", "..\AllPrograms.Logic\MergeOverLappingSubIntervals\MergeOverLappingSubIntervals.csproj", "{5964A248-C76A-4B6E-9713-74E7493D53EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MergeOverLappingSubIntervals", "..\AllPrograms.Logic\MergeOverLappingSubIntervals\MergeOverLappingSubIntervals.csproj", "{5964A248-C76A-4B6E-9713-74E7493D53EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SquareRootOfN", "..\AllPrograms.Logic\SquareRootOfN\SquareRootOfN.csproj", "{2FAEA283-2548-40E5-87F3-F6FCD18C7361}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -297,6 +299,10 @@ Global
 		{5964A248-C76A-4B6E-9713-74E7493D53EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5964A248-C76A-4B6E-9713-74E7493D53EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5964A248-C76A-4B6E-9713-74E7493D53EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FAEA283-2548-40E5-87F3-F6FCD18C7361}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FAEA283-2548-40E5-87F3-F6FCD18C7361}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FAEA283-2548-40E5-87F3-F6FCD18C7361}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FAEA283-2548-40E5-87F3-F6FCD18C7361}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -350,6 +356,7 @@ Global
 		{F0C5C6B1-3B3A-4E6C-B23D-2EEC3D4F9B37} = {0EFAD1EA-D236-4E8F-98A3-838BC3C1BF18}
 		{D85FA074-84C7-4D9A-AB0A-02C94C3AA8D1} = {0EFAD1EA-D236-4E8F-98A3-838BC3C1BF18}
 		{5964A248-C76A-4B6E-9713-74E7493D53EF} = {C56CC963-007E-430D-B094-07ACDF563E34}
+		{2FAEA283-2548-40E5-87F3-F6FCD18C7361} = {C56CC963-007E-430D-B094-07ACDF563E34}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {144249E9-F917-4866-A1B1-89E38358BE18}
