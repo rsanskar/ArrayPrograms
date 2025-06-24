@@ -47,6 +47,7 @@ using FirstAndLastPositionOfElement;
 using CountOccurrencesInSortedArray;
 using MergeOverLappingSubIntervals;
 using SquareRootOfN;
+using Search_in_Rotated_Sorted_Array_I;
 
 namespace AllArrayPrograms
 {
@@ -102,8 +103,28 @@ namespace AllArrayPrograms
             { 44, CountOccurrencesInSortedArray},
             { 45, MergeOverLappingSubIntervals},
             { 46, SquareRootOfN},
+            { 47, FindElementInRotatedSortedArrayI},
+            { 47, FindElementInRotatedSortedArrayII},
 
         };
+
+        private static void FindElementInRotatedSortedArrayII()
+        {
+            int[] inpArray = InputArray();
+            Console.WriteLine("Enter Target value to search in an array");
+            int.TryParse(Console.ReadLine(), out int target);
+            int index = SearchInRotatedSortedArrayI.FindIndex(inpArray, target);
+            Console.WriteLine("Element Found at index: " + index);
+        }
+
+        private static void FindElementInRotatedSortedArrayI()
+        {
+            int[] inpArray = InputArray();
+            Console.WriteLine("Enter Target value to search in an array");
+            int.TryParse(Console.ReadLine(), out int target);
+            int index = SearchInRotatedSortedArrayI.FindIndex(inpArray, target);
+            Console.WriteLine("Element Found at index: " + index);
+        }
 
         private static void SquareRootOfN()
         {
@@ -211,6 +232,7 @@ namespace AllArrayPrograms
                 44 => "Count Occurrences in Sorted Array",
                 45 => "Merge Over Lapping intervas",
                 46 => "Find Square root of N ",
+                47 => "Find the element in rotated sorted Array ",
                 _ => "Unknow Program"//Default Program
             };
         }

@@ -103,7 +103,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CountOccurrencesInSortedArr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MergeOverLappingSubIntervals", "..\AllPrograms.Logic\MergeOverLappingSubIntervals\MergeOverLappingSubIntervals.csproj", "{5964A248-C76A-4B6E-9713-74E7493D53EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SquareRootOfN", "..\AllPrograms.Logic\SquareRootOfN\SquareRootOfN.csproj", "{2FAEA283-2548-40E5-87F3-F6FCD18C7361}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SquareRootOfN", "..\AllPrograms.Logic\SquareRootOfN\SquareRootOfN.csproj", "{2FAEA283-2548-40E5-87F3-F6FCD18C7361}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Search in Rotated Sorted Array I", "..\AllPrograms.Logic\Search in Rotated Sorted Array I\Search in Rotated Sorted Array I.csproj", "{BDA89710-C1DF-495A-AC40-1D2F4F15358A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Search in Rotated Sorted Array II", "..\AllPrograms.Logic\Search in Rotated Sorted Array II\Search in Rotated Sorted Array II.csproj", "{C98637FC-4BB8-4086-8A82-66BBCB4E4640}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -303,6 +307,14 @@ Global
 		{2FAEA283-2548-40E5-87F3-F6FCD18C7361}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2FAEA283-2548-40E5-87F3-F6FCD18C7361}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2FAEA283-2548-40E5-87F3-F6FCD18C7361}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDA89710-C1DF-495A-AC40-1D2F4F15358A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDA89710-C1DF-495A-AC40-1D2F4F15358A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDA89710-C1DF-495A-AC40-1D2F4F15358A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDA89710-C1DF-495A-AC40-1D2F4F15358A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C98637FC-4BB8-4086-8A82-66BBCB4E4640}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C98637FC-4BB8-4086-8A82-66BBCB4E4640}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C98637FC-4BB8-4086-8A82-66BBCB4E4640}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C98637FC-4BB8-4086-8A82-66BBCB4E4640}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -357,6 +369,8 @@ Global
 		{D85FA074-84C7-4D9A-AB0A-02C94C3AA8D1} = {0EFAD1EA-D236-4E8F-98A3-838BC3C1BF18}
 		{5964A248-C76A-4B6E-9713-74E7493D53EF} = {C56CC963-007E-430D-B094-07ACDF563E34}
 		{2FAEA283-2548-40E5-87F3-F6FCD18C7361} = {C56CC963-007E-430D-B094-07ACDF563E34}
+		{BDA89710-C1DF-495A-AC40-1D2F4F15358A} = {0EFAD1EA-D236-4E8F-98A3-838BC3C1BF18}
+		{C98637FC-4BB8-4086-8A82-66BBCB4E4640} = {0EFAD1EA-D236-4E8F-98A3-838BC3C1BF18}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {144249E9-F917-4866-A1B1-89E38358BE18}
