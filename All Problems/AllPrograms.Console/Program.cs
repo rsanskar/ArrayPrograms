@@ -112,8 +112,48 @@ namespace AllArrayPrograms
             { 52, Pattren4},
             { 53, Pattren5},
             { 54, Pattren6},
+            { 55, Pattren7},
+            { 56, Pattren8},
+            { 57, Pattren9},
+            { 58, Pattren10},
+            { 59, Pattren11},
 
         };
+
+        private static void Pattren11()
+        {
+            Console.WriteLine("Enter the value to print Stars");
+            int.TryParse(Console.ReadLine(), out int n);
+            Pattern11.PrintPattern11(n);
+        }
+
+        private static void Pattren10()
+        {
+            Console.WriteLine("Enter the value to print Stars");
+            int.TryParse(Console.ReadLine(), out int n);
+            Pattern10.PrintPattern10(n);
+        }
+
+        private static void Pattren9()
+        {
+            Console.WriteLine("Enter the value to print Stars");
+            int.TryParse(Console.ReadLine(), out int n);
+            Pattern9.PrintPattern9(n);
+        }
+
+        private static void Pattren8()
+        {
+            Console.WriteLine("Enter the value to print Stars");
+            int.TryParse(Console.ReadLine(), out int n);
+            Pattern8.PrintPattern8(n);
+        }
+
+        private static void Pattren7()
+        {
+            Console.WriteLine("Enter the value to print Stars");
+            int.TryParse(Console.ReadLine(), out int n);
+            Pattern7.PrintPattern7(n);
+        }
 
         private static void Pattren6()
         {
@@ -287,6 +327,11 @@ namespace AllArrayPrograms
                 52 => "Print Pattren4 ",
                 53 => "Print Pattren5 ",
                 54 => "Print Pattren6 ",
+                55 => "Print Pattren7 ",
+                56 => "Print Pattren8 ",
+                57 => "Print Pattren9 ",
+                58 => "Print Pattren10 ",
+                59 => "Print Pattren11 ",
                 _ => "Unknow Program"//Default Program
             };
         }
