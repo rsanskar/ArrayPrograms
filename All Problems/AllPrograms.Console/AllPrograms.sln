@@ -109,7 +109,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Search in Rotated Sorted Ar
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Search in Rotated Sorted Array II", "..\AllPrograms.Logic\Search in Rotated Sorted Array II\Search in Rotated Sorted Array II.csproj", "{C98637FC-4BB8-4086-8A82-66BBCB4E4640}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedianOf2SortedArrays", "..\AllPrograms.Logic\MedianOf2SortedArrays\MedianOf2SortedArrays.csproj", "{62C2AE70-C7FC-4330-84B1-9D92478EFDA7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MedianOf2SortedArrays", "..\AllPrograms.Logic\MedianOf2SortedArrays\MedianOf2SortedArrays.csproj", "{62C2AE70-C7FC-4330-84B1-9D92478EFDA7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pattren Programs", "Pattren Programs", "{52CA7830-803E-4C2F-93CF-9DA4A7B89351}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StriverA2ZPattrenPrograms", "..\AllPrograms.Logic\StriverA2ZPattrenPrograms\StriverA2ZPattrenPrograms.csproj", "{DC87CDCB-C3ED-48C1-BDD9-0CC03D645521}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -321,6 +325,10 @@ Global
 		{62C2AE70-C7FC-4330-84B1-9D92478EFDA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{62C2AE70-C7FC-4330-84B1-9D92478EFDA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{62C2AE70-C7FC-4330-84B1-9D92478EFDA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC87CDCB-C3ED-48C1-BDD9-0CC03D645521}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC87CDCB-C3ED-48C1-BDD9-0CC03D645521}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC87CDCB-C3ED-48C1-BDD9-0CC03D645521}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC87CDCB-C3ED-48C1-BDD9-0CC03D645521}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -378,6 +386,8 @@ Global
 		{BDA89710-C1DF-495A-AC40-1D2F4F15358A} = {0EFAD1EA-D236-4E8F-98A3-838BC3C1BF18}
 		{C98637FC-4BB8-4086-8A82-66BBCB4E4640} = {0EFAD1EA-D236-4E8F-98A3-838BC3C1BF18}
 		{62C2AE70-C7FC-4330-84B1-9D92478EFDA7} = {0EFAD1EA-D236-4E8F-98A3-838BC3C1BF18}
+		{52CA7830-803E-4C2F-93CF-9DA4A7B89351} = {C56CC963-007E-430D-B094-07ACDF563E34}
+		{DC87CDCB-C3ED-48C1-BDD9-0CC03D645521} = {52CA7830-803E-4C2F-93CF-9DA4A7B89351}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {144249E9-F917-4866-A1B1-89E38358BE18}

@@ -48,6 +48,7 @@ using CountOccurrencesInSortedArray;
 using MergeOverLappingSubIntervals;
 using SquareRootOfN;
 using Search_in_Rotated_Sorted_Array_I;
+using StriverA2ZPattrenPrograms;
 
 namespace AllArrayPrograms
 {
@@ -104,9 +105,56 @@ namespace AllArrayPrograms
             { 45, MergeOverLappingSubIntervals},
             { 46, SquareRootOfN},
             { 47, FindElementInRotatedSortedArrayI},
-            { 47, FindElementInRotatedSortedArrayII},
+            { 48, FindElementInRotatedSortedArrayII},
+            { 49, Pattren1},
+            { 50, Pattren2},
+            { 51, Pattren3},
+            { 52, Pattren4},
+            { 53, Pattren5},
+            { 54, Pattren6},
 
         };
+
+        private static void Pattren6()
+        {
+            Console.WriteLine("Enter the value to print Stars");
+            int.TryParse(Console.ReadLine(), out int n);
+            Pattern6.PrintPattern6(n);
+        }
+
+        private static void Pattren5()
+        {
+            Console.WriteLine("Enter the value to print Stars");
+            int.TryParse(Console.ReadLine(), out int n);
+            Pattern5.PrintPattern5(n);
+        }
+
+        private static void Pattren4()
+        {
+            Console.WriteLine("Enter the value to print Stars");
+            int.TryParse(Console.ReadLine(), out int n);
+            Pattern4.PrintPattern4(n);
+        }
+
+        private static void Pattren3()
+        {
+            Console.WriteLine("Enter the value to print Stars");
+            int.TryParse(Console.ReadLine(), out int n);
+            Pattern3.PrintPattern3(n);
+        }
+
+        private static void Pattren2()
+        {
+            Console.WriteLine("Enter the value to print Stars");
+            int.TryParse(Console.ReadLine(), out int n);
+            Pattern2.PrintPattren2(n);
+        }
+        private static void Pattren1()
+        {
+            Console.WriteLine("Enter the value to print Stars");
+            int.TryParse(Console.ReadLine(), out int n);
+            Pattern1.PrintPatteren1(n);
+        }
 
         private static void FindElementInRotatedSortedArrayII()
         {
@@ -233,6 +281,12 @@ namespace AllArrayPrograms
                 45 => "Merge Over Lapping intervas",
                 46 => "Find Square root of N ",
                 47 => "Find the element in rotated sorted Array ",
+                49 => "Print Pattren1 ",
+                50 => "Print Pattren2 ",
+                51 => "Print Pattren3 ",
+                52 => "Print Pattren4 ",
+                53 => "Print Pattren5 ",
+                54 => "Print Pattren6 ",
                 _ => "Unknow Program"//Default Program
             };
         }
