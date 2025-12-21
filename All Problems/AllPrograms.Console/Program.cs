@@ -55,6 +55,79 @@ namespace AllArrayPrograms
     public class Program
     {
         private const int PageSize = 10;
+        private static string GetProgramDescription(int index)
+        {
+            // You can hardcode or map descriptions here
+            return index switch
+            {
+                0 => "Largest Element in an array",
+                1 => "Second Largest Element in an array",
+                2 => "Check if an Array is Sorted",
+                3 => "Remove Duplicates in-place from Sorted Array",
+                4 => "Left Rotate Array by K Places",
+                5 => "Move All K values to the end",
+                6 => "Linear Search",
+                7 => "Union Of 2 Arrays",
+                8 => "Intersection Of 2 Arrays",
+                9 => "Find missing element",
+                10 => "Find Max Consecutive 1s",
+                11 => "Find Single Number In Array",
+                12 => "Longest Subarray with given Sum K(Positives)",
+                13 => "Two Sum Problem returns the indices of the given target",
+                14 => "Sort an array of 0's 1's and 2's",
+                15 => "Find the Majority Element that occurs more than N/2 times",
+                16 => "Maximum Sub Array Sum Kadane's Algorithm",
+                17 => "Maximum Sub Array Sum and return sub array",
+                18 => "Best Time to Buy and Sell Stock",
+                19 => "Rearrange Array Elements by Sign",
+                20 => "Leader Elements in array",
+                21 => "Longest Consecutive Sequence In Array",
+                22 => "Set Matrix Zero",
+                23 => "Rotate Image by 90 degree(Clock wise)",
+                24 => "Rotate Image by 90 degree(Anti Clock wise)",
+                25 => "Spiral Traversal of Matrix",
+                26 => "find number of subarrays with given sum k",
+                27 => "Majority element more than N/3 times",
+                28 => "Three Sum Problem (Find Triplets)",
+                29 => "PascalTriangle",
+                30 => "Four sum problem",
+                31 => "length of longest sub array with sum 0",
+                32 => "Count subarrays with given xor K",
+                33 => "find missing and repeating number in array from 1 to n",
+                34 => "find number of inversions in the given array",
+                35 => "Merge sort algorithm",
+                36 => "Count Reverse pairs",
+                37 => "Maximum Product Subarray in an Array",
+                38 => "Binary Search",
+                39 => "Find Lower Bound using Binary search",
+                40 => "Find Upper Bound using Binary search",
+                41 => "Find Insert Position using Binary search",
+                42 => "Find floor and ceil values using Binary search",
+                43 => "Find First and Last Position of Element in Sorted Array using Binary Search",
+                44 => "Count Occurrences in Sorted Array",
+                45 => "Merge Over Lapping intervas",
+                46 => "Find Square root of N ",
+                47 => "Find the element in rotated sorted Array ",
+                49 => "Print Pattren1 ",
+                50 => "Print Pattren2 ",
+                51 => "Print Pattren3 ",
+                52 => "Print Pattren4 ",
+                53 => "Print Pattren5 ",
+                54 => "Print Pattren6 ",
+                55 => "Print Pattren7 ",
+                56 => "Print Pattren8 ",
+                57 => "Print Pattren9 ",
+                58 => "Print Pattren10 ",
+                59 => "Print Pattren11 ",
+                60 => "Print Pattren12 ",
+                61 => "Print Pattren13 ",
+                62 => "Print Pattren14 ",
+                63 => "Print Pattren15 ",
+                64 => "Print Pattren16 ",
+                65 => "Print Pattren17 ",
+                _ => "Unknow Program"//Default Program
+            };
+        }
         private static readonly Dictionary<int, Action> ProgramActions = new Dictionary<int, Action>
         {
             { 0, RunLargestElementProgram },
@@ -117,8 +190,56 @@ namespace AllArrayPrograms
             { 57, Pattren9},
             { 58, Pattren10},
             { 59, Pattren11},
+            { 60, Pattren12},
+            { 61, Pattren13},
+            { 62, Pattren14},
+            { 63, Pattren15},
+            { 64, Pattren16},
+            { 65, Pattren17},
 
         };
+
+        private static void Pattren17()
+        {
+            Console.WriteLine("Enter the value to print Stars");
+            int.TryParse(Console.ReadLine(), out int n);
+            Pattern17.PrintPattern17(n);
+        }
+
+        private static void Pattren16()
+        {
+            Console.WriteLine("Enter the value to print Stars");
+            int.TryParse(Console.ReadLine(), out int n);
+            Pattern16.PrintPattern16(n);
+        }
+
+        private static void Pattren15()
+        {
+            Console.WriteLine("Enter the value to print Stars");
+            int.TryParse(Console.ReadLine(), out int n);
+            Pattern15.PrintPattern15(n);
+        }
+
+        private static void Pattren14()
+        {
+            Console.WriteLine("Enter the value to print Stars");
+            int.TryParse(Console.ReadLine(), out int n);
+            Pattern14.PrintPattern14(n);
+        }
+
+        private static void Pattren13()
+        {
+            Console.WriteLine("Enter the value to print Stars");
+            int.TryParse(Console.ReadLine(), out int n);
+            Pattern13.PrintPattern13(n);
+        }
+
+        private static void Pattren12()
+        {
+            Console.WriteLine("Enter the value to print Stars");
+            int.TryParse(Console.ReadLine(), out int n);
+            Pattern12.PrintPattern12(n);
+        }
 
         private static void Pattren11()
         {
@@ -268,73 +389,7 @@ namespace AllArrayPrograms
 
         }
 
-        private static string GetProgramDescription(int index)
-        {
-            // You can hardcode or map descriptions here
-            return index switch
-            {
-                0 => "Largest Element in an array",
-                1 => "Second Largest Element in an array",
-                2 => "Check if an Array is Sorted",
-                3 => "Remove Duplicates in-place from Sorted Array",
-                4 => "Left Rotate Array by K Places",
-                5 => "Move All K values to the end",
-                6 => "Linear Search",
-                7 => "Union Of 2 Arrays",
-                8 => "Intersection Of 2 Arrays",
-                9 => "Find missing element",
-                10 => "Find Max Consecutive 1s",
-                11 => "Find Single Number In Array",
-                12 => "Longest Subarray with given Sum K(Positives)",
-                13 => "Two Sum Problem returns the indices of the given target",
-                14 => "Sort an array of 0's 1's and 2's",
-                15 => "Find the Majority Element that occurs more than N/2 times",
-                16 => "Maximum Sub Array Sum Kadane's Algorithm",
-                17 => "Maximum Sub Array Sum and return sub array",
-                18 => "Best Time to Buy and Sell Stock",
-                19 => "Rearrange Array Elements by Sign",
-                20 => "Leader Elements in array",
-                21 => "Longest Consecutive Sequence In Array",
-                22 => "Set Matrix Zero",
-                23 => "Rotate Image by 90 degree(Clock wise)",
-                24 => "Rotate Image by 90 degree(Anti Clock wise)",
-                25 => "Spiral Traversal of Matrix",
-                26 => "find number of subarrays with given sum k",
-                27 => "Majority element more than N/3 times",
-                28 => "Three Sum Problem (Find Triplets)",
-                29 => "PascalTriangle",
-                30 => "Four sum problem",
-                31 => "length of longest sub array with sum 0",
-                32 => "Count subarrays with given xor K",
-                33 => "find missing and repeating number in array from 1 to n",
-                34 => "find number of inversions in the given array",
-                35 => "Merge sort algorithm",
-                36 => "Count Reverse pairs",
-                37 => "Maximum Product Subarray in an Array",
-                38 => "Binary Search",
-                39 => "Find Lower Bound using Binary search",
-                40 => "Find Upper Bound using Binary search",
-                41 => "Find Insert Position using Binary search",
-                42 => "Find floor and ceil values using Binary search",
-                43 => "Find First and Last Position of Element in Sorted Array using Binary Search",
-                44 => "Count Occurrences in Sorted Array",
-                45 => "Merge Over Lapping intervas",
-                46 => "Find Square root of N ",
-                47 => "Find the element in rotated sorted Array ",
-                49 => "Print Pattren1 ",
-                50 => "Print Pattren2 ",
-                51 => "Print Pattren3 ",
-                52 => "Print Pattren4 ",
-                53 => "Print Pattren5 ",
-                54 => "Print Pattren6 ",
-                55 => "Print Pattren7 ",
-                56 => "Print Pattren8 ",
-                57 => "Print Pattren9 ",
-                58 => "Print Pattren10 ",
-                59 => "Print Pattren11 ",
-                _ => "Unknow Program"//Default Program
-            };
-        }
+        
         public static void Main(string[] args)
         {
             DisaplayPrograms();
