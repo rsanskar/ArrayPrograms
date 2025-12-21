@@ -125,6 +125,9 @@ namespace AllArrayPrograms
                 63 => "Print Pattren15 ",
                 64 => "Print Pattren16 ",
                 65 => "Print Pattren17 ",
+                66 => "Print Pattren18 ",
+                67 => "Print Pattren19 ",
+                68 => "Print Pattren20 ",
                 _ => "Unknow Program"//Default Program
             };
         }
@@ -196,8 +199,32 @@ namespace AllArrayPrograms
             { 63, Pattren15},
             { 64, Pattren16},
             { 65, Pattren17},
+            { 66, Pattren18},
+            { 67, Pattren19},
+            { 68, Pattren20},
 
         };
+
+        private static void Pattren20()
+        {
+            Console.WriteLine("Enter the value to print Stars");
+            int.TryParse(Console.ReadLine(), out int n);
+            Pattern20.PrintPattern20(n);
+        }
+
+        private static void Pattren19()
+        {
+            Console.WriteLine("Enter the value to print Stars");
+            int.TryParse(Console.ReadLine(), out int n);
+            Pattern19.PrintPattern19(n);
+        }
+
+        private static void Pattren18()
+        {
+            Console.WriteLine("Enter the value to print Stars");
+            int.TryParse(Console.ReadLine(), out int n);
+            Pattern18.PrintPattern18(n);
+        }
 
         private static void Pattren17()
         {
