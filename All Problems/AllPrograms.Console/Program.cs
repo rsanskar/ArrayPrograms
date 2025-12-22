@@ -49,6 +49,8 @@ using MergeOverLappingSubIntervals;
 using SquareRootOfN;
 using Search_in_Rotated_Sorted_Array_I;
 using StriverA2ZPattrenPrograms;
+using StriversA2ZBasicMathPrograms;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace AllArrayPrograms
 {
@@ -129,6 +131,8 @@ namespace AllArrayPrograms
                 67 => "Print Pattren19 ",
                 68 => "Print Pattren20 ",
                 69 => "Print Pattren21 ",
+                70 => "Count Number of Digits in Given Number",
+                71 => "Reverse Of a Given Number",
                 _ => "Unknow Program"//Default Program
             };
         }
@@ -204,8 +208,34 @@ namespace AllArrayPrograms
             { 67, Pattren19},
             { 68, Pattren20},
             { 69, Pattren21},
+            { 70, CountNumbers},
+            { 71, ReverseNumbers},
 
         };
+
+        private static void ReverseNumbers()
+        {
+            Console.WriteLine("Enter a number to count the digits");
+            int n;
+            while (!int.TryParse(Console.ReadLine(), out n))
+            {
+                Console.WriteLine("Enter a valid Number");
+            }
+            int reveserNumber = ReverseOfNumber.Reverse(n);
+            Console.WriteLine("Reverse Of a Number is:"+reveserNumber);
+        }
+
+        private static void CountNumbers()
+        {
+            Console.WriteLine("Enter a number to count the digits");
+            int n;
+            while (!int.TryParse(Console.ReadLine(), out n))
+            {
+                Console.WriteLine("Enter a valid Number");
+            }
+            int count = CountNumberOfDigitsInGivenNumber.CountDigits(n);
+            Console.WriteLine("Number of digits in given number is: " + count);
+        }
 
         private static void Pattren21()
         {
@@ -375,8 +405,8 @@ namespace AllArrayPrograms
         {
             Console.WriteLine("Enter a number to find the floor square root of N");
             int.TryParse(Console.ReadLine(), out int n);
-            Console.WriteLine("Square Root of N is : "+ SquareRootOfNClass.FindSquareRootOfn(n));
-            Console.WriteLine("Square Root of N using BS is : "+ SquareRootOfNClass.FindSquareRootOfnUsingBS(n));
+            Console.WriteLine("Square Root of N is : " + SquareRootOfNClass.FindSquareRootOfn(n));
+            Console.WriteLine("Square Root of N using BS is : " + SquareRootOfNClass.FindSquareRootOfnUsingBS(n));
         }
 
         private static void MergeOverLappingSubIntervals()
@@ -398,7 +428,7 @@ namespace AllArrayPrograms
             int[] array = InputArray();
             Console.WriteLine("Enter target value: ");
             int.TryParse(Console.ReadLine(), out int target);
-            int occurrrences = CountOccurrencesInSortedArrayClass.CountOccurrences(array,target);
+            int occurrrences = CountOccurrencesInSortedArrayClass.CountOccurrences(array, target);
             Console.WriteLine($"Ther target element is repeated for {occurrrences}");
 
             int occurrrences1 = CountOccurrencesInSortedArrayClass.CountOccurrencesMethod2(array, target);
@@ -425,7 +455,7 @@ namespace AllArrayPrograms
 
         }
 
-        
+
         public static void Main(string[] args)
         {
             DisaplayPrograms();
@@ -877,16 +907,16 @@ namespace AllArrayPrograms
         {
             int[] array = InputArray();
             MergeSortAlogorithmClass.MergeSort(array, 0, array.Length - 1);
-            PrintArray(array,array.Length);
+            PrintArray(array, array.Length);
         }
 
         private static void CountReversePairs()
         {
             int[] array = InputArray();
             int count = CountReversePairsClass.CountReversePairsInArray(array);
-            int count1 = CountReversePairsClass.MergeSort(array,0,array.Length-1);
-            Console.WriteLine("Number of pairs using Method1 is: "+ count);
-            Console.WriteLine("Number of pairs using Method2 is: "+ count1);
+            int count1 = CountReversePairsClass.MergeSort(array, 0, array.Length - 1);
+            Console.WriteLine("Number of pairs using Method1 is: " + count);
+            Console.WriteLine("Number of pairs using Method2 is: " + count1);
         }
 
         private static void FindUpperBoundUsingBS()
@@ -936,7 +966,7 @@ namespace AllArrayPrograms
 
         private static void SearchInsertPosition()
         {
-            int[] array = InputArray(); 
+            int[] array = InputArray();
             Console.WriteLine("Enter target: ");
             int.TryParse(Console.ReadLine(), out int target);
             int position = SearchInsertPositionClass.SearchInsert(array, target);

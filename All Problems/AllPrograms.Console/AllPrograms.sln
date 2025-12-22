@@ -115,6 +115,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pattren Programs", "Pattren
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StriverA2ZPattrenPrograms", "..\AllPrograms.Logic\StriverA2ZPattrenPrograms\StriverA2ZPattrenPrograms.csproj", "{DC87CDCB-C3ED-48C1-BDD9-0CC03D645521}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Basic Maths Programs", "Basic Maths Programs", "{55F13CEC-D2C8-4E2A-937A-E5AC7B0B5D9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StriversA2ZBasicMathPrograms", "..\AllPrograms.Logic\StriversA2ZBasicMathPrograms\StriversA2ZBasicMathPrograms.csproj", "{B38A1B34-78D6-4370-AD5D-F7A2CB48973E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -329,6 +333,10 @@ Global
 		{DC87CDCB-C3ED-48C1-BDD9-0CC03D645521}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC87CDCB-C3ED-48C1-BDD9-0CC03D645521}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC87CDCB-C3ED-48C1-BDD9-0CC03D645521}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B38A1B34-78D6-4370-AD5D-F7A2CB48973E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B38A1B34-78D6-4370-AD5D-F7A2CB48973E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B38A1B34-78D6-4370-AD5D-F7A2CB48973E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B38A1B34-78D6-4370-AD5D-F7A2CB48973E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -388,6 +396,8 @@ Global
 		{62C2AE70-C7FC-4330-84B1-9D92478EFDA7} = {0EFAD1EA-D236-4E8F-98A3-838BC3C1BF18}
 		{52CA7830-803E-4C2F-93CF-9DA4A7B89351} = {C56CC963-007E-430D-B094-07ACDF563E34}
 		{DC87CDCB-C3ED-48C1-BDD9-0CC03D645521} = {52CA7830-803E-4C2F-93CF-9DA4A7B89351}
+		{55F13CEC-D2C8-4E2A-937A-E5AC7B0B5D9C} = {C56CC963-007E-430D-B094-07ACDF563E34}
+		{B38A1B34-78D6-4370-AD5D-F7A2CB48973E} = {55F13CEC-D2C8-4E2A-937A-E5AC7B0B5D9C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {144249E9-F917-4866-A1B1-89E38358BE18}
