@@ -51,6 +51,8 @@ using Search_in_Rotated_Sorted_Array_I;
 using StriverA2ZPattrenPrograms;
 using StriversA2ZBasicMathPrograms;
 using static System.Runtime.InteropServices.JavaScript.JSType;
+using AllPrograms.Console;
+using System.Linq;
 
 namespace AllArrayPrograms
 {
@@ -133,6 +135,10 @@ namespace AllArrayPrograms
                 69 => "Print Pattren21 ",
                 70 => "Count Number of Digits in Given Number",
                 71 => "Reverse Of a Given Number",
+                72 => "Palindrome Number",
+                73 => "ArmStrong Number",
+                74 => "Print All Divisors",
+                75 => "Print the Given Number is Prime Or Not",
                 _ => "Unknow Program"//Default Program
             };
         }
@@ -210,8 +216,72 @@ namespace AllArrayPrograms
             { 69, Pattren21},
             { 70, CountNumbers},
             { 71, ReverseNumbers},
+            { 72, PalindromeNumber},
+            { 73, ArmstrongNumbers},
+            { 74, PrintAllDivisors},
+            { 75, IsPrime},
 
         };
+
+        private static void IsPrime()
+        {
+            Console.WriteLine("Enter a number to check Prime or Not");
+            int n;
+            while (!int.TryParse(Console.ReadLine(), out n))
+            {
+                Console.WriteLine("Enter a valid Number");
+            }
+            string prime = PrimeNumber.IsPrimeNumber(n) ? "Prime" : "Not Prime";
+            Console.WriteLine($"The Given Number is {prime}");
+        }
+
+        private static void PrintAllDivisors()
+        {
+            Console.WriteLine("Enter a number to find Divisors");
+            int n;
+            while (!int.TryParse(Console.ReadLine(), out n))
+            {
+                Console.WriteLine("Enter a valid Number");
+            }
+            var divisors = PrintAllDivisorsOfANumber.PrintDivisors(n);
+            Console.WriteLine(string.Join(",", divisors));
+        }
+
+        private static void ArmstrongNumbers()
+        {
+            Console.WriteLine("Enter a number to check Palindrome");
+            int n;
+            while (!int.TryParse(Console.ReadLine(), out n))
+            {
+                Console.WriteLine("Enter a valid Number");
+            }
+            if (ArmstrongNumber.IsArmSTrongNumber(n))
+            {
+                Console.WriteLine("Given Number is a Armstrong Number");
+            }
+            else
+            {
+                Console.WriteLine("Not a Armstrong Number");
+            }
+        }
+
+        private static void PalindromeNumber()
+        {
+            Console.WriteLine("Enter a number to check Palindrome");
+            int n;
+            while (!int.TryParse(Console.ReadLine(), out n))
+            {
+                Console.WriteLine("Enter a valid Number");
+            }
+            if (PalindromNumber.IsPalindrome(n)) 
+            {
+                Console.WriteLine("Given Number is a palindrome");
+            }
+            else
+            {
+                Console.WriteLine("Not a palindrome");
+            }
+        }
 
         private static void ReverseNumbers()
         {
