@@ -53,6 +53,7 @@ using StriversA2ZBasicMathPrograms;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 using AllPrograms.Console;
 using System.Linq;
+using RecurssionPrograms;
 
 namespace AllArrayPrograms
 {
@@ -139,6 +140,7 @@ namespace AllArrayPrograms
                 73 => "ArmStrong Number",
                 74 => "Print All Divisors",
                 75 => "Print the Given Number is Prime Or Not",
+                76 => "Recurssion: Print Name N Times",
                 _ => "Unknow Program"//Default Program
             };
         }
@@ -220,8 +222,27 @@ namespace AllArrayPrograms
             { 73, ArmstrongNumbers},
             { 74, PrintAllDivisors},
             { 75, IsPrime},
+            { 76, RecurssionPrintNameNTimes},
 
         };
+
+        private static void RecurssionPrintNameNTimes()
+        {
+            Console.WriteLine("Enter a name to Print");
+            string name = Console.ReadLine();
+            while(string.IsNullOrEmpty(name))
+            {
+                Console.WriteLine("Enter a valid Name");
+                name = Console.ReadLine();
+            }
+            Console.WriteLine("Enter a number to print name N Times");
+            int n;
+            while (!int.TryParse(Console.ReadLine(), out n))
+            {
+                Console.WriteLine("Enter a valid Number");
+            }
+            PrintNameNTimes.PrintName(name,n);
+        }
 
         private static void IsPrime()
         {
