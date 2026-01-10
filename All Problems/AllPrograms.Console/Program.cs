@@ -141,6 +141,9 @@ namespace AllArrayPrograms
                 74 => "Print All Divisors",
                 75 => "Print the Given Number is Prime Or Not",
                 76 => "Recurssion: Print Name N Times",
+                77 => "Recurssion: Print 1 to N",
+                78 => "Recurssion: Print N to 1",
+                79 => "Recurssion: Print 1st N tersms Sum",
                 _ => "Unknow Program"//Default Program
             };
         }
@@ -223,8 +226,36 @@ namespace AllArrayPrograms
             { 74, PrintAllDivisors},
             { 75, IsPrime},
             { 76, RecurssionPrintNameNTimes},
+            { 77, RecurssionPrint1ToN},
+            { 78, RecurssionPrintNTo1},
+            { 79, Recusrssive1stNSum},
 
         };
+
+        private static void Recusrssive1stNSum()
+        {
+            Console.WriteLine("Enter a number to find Sum Of N terms");
+            int n = InputNumber();
+            int sum = RecursiveSumOfFirstN.PrintRecursiveSumOfFirstN(n, 0);
+            Console.WriteLine("Sum of 1st N numbers is: "+sum);
+        }
+
+        private static void RecurssionPrintNTo1()
+        {
+            Console.WriteLine("Enter a number to print N to 1");
+            int n = InputNumber();
+            //PrintNto1.PrintNto1Function(n);
+            PrintNto1.PrintNto1Function2(n,1);
+
+        }
+
+        private static void RecurssionPrint1ToN()
+        {
+            Console.WriteLine("Enter a number to print 1 to N");
+            int n = InputNumber();
+            //Print1toN.print1toNFunction(n);
+            Print1toN.Print1toNFuncton2(n, 1);
+        }
 
         private static void RecurssionPrintNameNTimes()
         {
@@ -1062,6 +1093,16 @@ namespace AllArrayPrograms
             int.TryParse(Console.ReadLine(), out int target);
             int position = SearchInsertPositionClass.SearchInsert(array, target);
             Console.WriteLine("The position to insert the given element using method 1 is: " + position);
+        }
+
+        private static int InputNumber()
+        {
+            int n;
+            while(!int.TryParse(Console.ReadLine(), out n))
+            {
+                Console.WriteLine("enter a valid Number");
+            }
+            return n;
         }
 
     }
